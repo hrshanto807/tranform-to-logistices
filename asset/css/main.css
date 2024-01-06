@@ -1,0 +1,126 @@
+/* ----------------- */
+/* font */
+/* ----------------- */
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@400;500;600;700&display=swap');
+
+/* ------------------------ */
+/* genarel */
+/* ------------------------ */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1212px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+:root {
+    --tal-primary-font: "Krub";
+    --tal-primary-color: #FFBE34;
+    --tal-secondary-color: #091242;
+    --tal-heading-color: #1C1F35;
+    --tal-text-color: #666C89;
+    --tal-image: linear-gradient(94deg, #FFB629 -1.21%, #FFDA56 50.75%, #FFD7A6 102.71%);
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: var(--tal-primary-font);
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+h2 {
+    color: var(--tal-heading-color);
+    font-family: var(--tal-primary-font);
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+h3 {
+    color: var(--tal-heading-color);
+    font-family: var(--tal-primary-font);
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+h4{
+    font-family: var(--tal-primary-font);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+}
+
+h6 {
+    color: var(--tal-heading-color);
+    font-family: var(--tal-primary-font);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+p {
+    font-family: var(--tal-primary-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 151.523%;
+    /* 24.244px */
+}
+
+li {
+    list-style: none;
+}
+/* -------------------- */
+/* header top */
+/* -------------------- */
+.header-top-area-all{
+    background-color: var(--tal-secondary-color);
+    padding-top: 46px;
+    padding-bottom: 46px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================================================================================================== */
+/* for Tab screen */
+/* ======================================================================================================== */
+@media only screen and (min-width: 992px) {
+    .container {
+        max-width: 100%;
+    }
+
+}
+
+/* ============================================================================================================ */
+/* for moabile screen */
+/* ============================================================================================================ */
+@media only screen and (max-width: 600px) {
+    .container {
+        max-width: 100%;
+    }
+}
