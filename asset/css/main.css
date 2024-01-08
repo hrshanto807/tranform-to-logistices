@@ -56,24 +56,26 @@ h3 {
     font-weight: 400;
     line-height: normal;
 }
-h4{
+
+h4 {
     font-family: var(--tal-primary-font);
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
-    line-height: normal; 
+    line-height: normal;
 }
 
 h6 {
-    color: var(--tal-heading-color);
     font-family: var(--tal-primary-font);
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+
 }
 
 p {
+    color: var(--tal-text-color);
     font-family: var(--tal-primary-font);
     font-size: 16px;
     font-style: normal;
@@ -85,33 +87,794 @@ p {
 li {
     list-style: none;
 }
+
+.tal-btuon {
+    background-image: var(--tal-image);
+    color: #23212A;
+    font-family: Krub;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 135.023%;
+    /* 21.604px */
+    padding: 19px 48px;
+}
+
+.tall-btn-2 {
+    background-color: var(--tal-secondary-color);
+    color: #FFF;
+    font-family: Krub;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 135.023%;
+    padding: 19px 56px;
+    /* 21.604px */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* -------------------- */
 /* header top */
 /* -------------------- */
-.header-top-area-all{
+.header-top-area-all {
     background-color: var(--tal-secondary-color);
     padding-top: 46px;
     padding-bottom: 46px;
 }
 
+.tal-single-header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+}
+
+.tal-single-header-content i {
+    color: var(--tal-primary-color);
+    width: 63px;
+    height: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------------------- */
+/* header main area*/
+/* ---------------------------- */
+.tal-header-main-area-area-all {
+    background-color: rgba(9, 18, 66, 0.25);
+    position: relative;
+}
+
+/* ----------------------- */
+/* header-manu area */
+/* ----------------------- */
+.tal-primary-menu>a {
+    color: #FFF;
+    font-family: var(--tal-primary-font-family);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    display: none;
+}
+
+.tal-primary-menu ul {
+    display: flex;
+    justify-content: end;
+    gap: 24px;
+    margin: 0;
+}
+
+.tal-primary-menu ul li {
+    list-style: none;
+}
+
+.tal-primary-menu ul li a span {
+    color: #FFF;
+    font-family: var(--tal-primary-font-family);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.tal-primary-menu ul li ul.dropdown-menu {
+    background: #592EA9;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: absolute;
+    display: none;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+.tal-primary-menu .navbar-nav .nav-link.active {
+    color: var(--tal-primary-color);
+
+}
+
+.tal-primary-menu .navbar-nav .nav-link {
+    color: #fff;
+}
+
+li .dropdown-toggle::after {
+    position: absolute;
+    content: "\f107";
+    font-family: 'FontAwesome';
+    font-size: 16px;
+    transform: translateY(-48%);
+    top: 56%;
+    right: -7px;
+    border: 0;
+}
+
+.tal-header-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.tal-header-icon {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+}
+
+.tal-header-icon i {
+    color: #FFF;
+
+}
+
+.tal-btn-2 {
+    color: #FFF;
+    font-family: var(--tal-primary-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 135.023%;
+    /* 21.604px */
+    background-color: var(--tal-heading-color);
+    padding: 20px 58px;
+}
+
+.tal-header-right .tal-btn {
+    display: flex;
+    padding: 28px 52px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #FFF;
+    color: var(--tal-heading-color);
+
+}
+
+/* --------------------------- */
+/* tal-hero-area  */
+/* -------------------------- */
+.tal-all-hero-area {
+    padding-top: 249px;
+    padding-bottom: 200px;
+    margin-top: -80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tal-hero-area {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    color: #fff;
+}
+
+.tal-hero-area h6 {
+    background: rgba(4, 28, 55, 0.50);
+    padding-left: 9px;
+    padding-right: 9px;
+    border-left: 5px solid var(--tal-primary-color);
+}
+
+/* -------------------------- */
+/* tal what we do area start */
+/* -------------------------- */
+.tal-what-we-do-area-all {
+    padding-top: 121px;
+    margin-bottom: 121px;
+}
+
+.tal-what-we-do-area h6 {
+    background: rgba(232, 232, 232, 0.50);
+    padding-left: 6px;
+    padding-right: 6px;
+    border-left: 5px solid var(--tal-primary-color);
+    display: inline-flex;
+}
+
+.single-what-do-we-do-area {
+    display: flex;
+    gap: 16px;
+
+}
+
+.single-what-do-we-do-area i {
+    width: 84px;
+    font-size: 30px;
+    color: var(--tal-primary-color);
+}
+
+/* ------------------------------- */
+/* tal-why-us-area-all */
+/* ------------------------------- */
+.why-us-main-bg {
+    background-repeat: no-repeat;
+    height: 504px;
+    background-size: cover;
+}
+
+/* --------------------- */
+/* .tal-why-us-area */
+/* --------------------- */
+.tal-why-us-area-all {
+    margin-top: -145px;
+
+}
+
+.tal-why-us-area {
+    background: #FFF;
+    padding: 80px;
+
+}
+
+.tal-why-us-left-area {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.tal-why-us-left-area h6 {
+    display: inline-flex;
+    padding: 3px 8px;
+    align-items: center;
+    gap: 10px;
+    width: 70px;
+    background: rgba(232, 232, 232, 0.50);
+    border-left: 5px solid var(--tal-primary-color);
+    display: inline-flex;
+
+}
+
+.single-whyus {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.single-whyus i {
+    background-image: var(--tal-image);
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--tal-secondary-color);
+}
+
+.why-us-thumb-area {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 431px;
+    position: relative;
 
 
+}
 
+.whyus-thumb-img {
+    position: absolute;
+    bottom: -122px;
+    left: -163px;
+    padding: 30px;
+    background-color: #fff;
+}
 
+/* ------------------------------ */
+/* satisfiyed area */
+/* ------------------------------ */
+.tal-satisfiyd-area-all {
+    padding-top: 121px;
+    padding-bottom: 121px;
+}
 
+.satisfiyed-area-tal {
+    border-top: 1px solid var(--tal-text-color);
+    border-bottom: 1px solid var(--tal-text-color);
+    padding-top: 38px;
+    padding-bottom: 38px;
 
+}
 
+.single-satisfiyed-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
 
+.single-satisfiyed-area h5 {
+    color: #1C1F35;
+    font-family: Rubik;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
 
+/* --------------------------------- */
+/* tall-across-area */
+/* --------------------------------- */
+.tall-across-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    position: relative;
 
+}
 
+.tall-content-area-across {
+    position: absolute;
+    bottom: 0;
+}
+
+.tall-content-area-across h4 {
+    color: #fff;
+}
+
+.tall-content-area-across p {
+    color: var(--tal-primary-color);
+}
+
+.tall-across-btn-area {
+    margin-top: 65px;
+}
+
+/* ------------------------ */
+/* tall-testimonial-area-all */
+/* ------------------------ */
+.tall-testimonial-area-all {
+    padding-top: 101px;
+    padding-bottom: 101px;
+}
+
+/* ------------------------------ */
+/* single-testi-area */
+/* ------------------------------ */
+.single-testimonial-area {
+    display: flex;
+    padding: 62px 72px;
+    flex-direction: column;
+    gap: 28px;
+    flex-shrink: 0;
+    background: #F4F4F4;
+}
+
+.single-testimonial-area:hover {
+    cursor: pointer;
+    background-color: var(--tal-secondary-color);
+}
+
+.single-testimonial-area:hover h4 {
+    color: #fff;
+}
+
+.single-testi-upper-area img {
+    width: 72.85px;
+    height: 72.85px;
+    flex-shrink: 0;
+}
+
+.testi-profile-area {
+    display: flex;
+}
+
+.testi-profile-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.testi-profile-area img {
+    width: 143px;
+    height: 143px;
+    border-radius: 50%;
+}
+
+.owl-carousel .owl-item img {
+    width: 73px;
+    height: 73px;
+}
+
+.testi-star {
+    display: flex;
+    gap: 15px;
+}
+
+.testi-star i {
+    color: var(--tal-primary-color);
+}
+
+/* ------------------------------ */
+/* tall-why-choose-area-all */
+/* ------------------------------ */
+.tall-why-choose-area-all {
+    padding-left: 140px;
+    padding-right: 280px;
+}
+
+.tall-why-choose-thumb-content {
+    position: absolute;
+    bottom: 0;
+    left: 150px;
+    padding: 33px 38px;
+    background-image: var(--tal-image);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 21px;
+}
+
+.tall-why-choose-area-content-all h6 {
+    display: inline-flex;
+    padding: 3px 8px;
+    align-items: center;
+    gap: 10px;
+    background: rgba(232, 232, 232, 0.50);
+    border-left: 5px solid var(--tal-primary-color);
+    display: inline-flex;
+
+}
+
+.single-tall-why-choose-area-all {
+    margin-top: 63px;
+}
+
+.tall-single-why-choose-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.tall-single-why-choose-area i {
+    background-image: var(--tal-image);
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--tal-secondary-color);
+}
+
+/* ------------------------------- */
+/* single-team-full-content-area */
+/* ------------------------------- */
+.tal-team-area-start-all {
+    padding-top: 121px;
+    padding-bottom: 121px;
+}
+
+.single-team-full-content-area {
+    display: flex;
+    align-items: center;
+    width: 364px;
+    height: 112px;
+    display: inline-flex;
+    padding-left: 22px;
+    align-items: center;
+    background-color: #1C1F35;
+    justify-content: space-between;
+
+}
+
+.single-team-area-content h4 {
+    color: #FFF;
+    font-family: Rubik;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+.single-team-social-area {
+    display: flex;
+    padding: 17.061px 20.072px;
+    justify-content: center;
+    gap: 10.036px;
+    background-image: var(--tal-image);
+}
+
+.single-team-social-area i {
+    color: var(--tal-heading-color);
+}
+
+/* ------------------------------------ */
+/* contact-tal-right-area */
+/* ------------------------------------ */
+.tall-all-contact-form {
+    display: flex;
+    padding-top: 143px;
+    padding-bottom: 143px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background: #091242;
+    opacity: 0.9;
+}
+
+.contact-tal-right-area {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-tal-right-area h6 {
+    color: #fff;
+    display: inline-flex;
+    padding: 3px 9px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: rgba(232, 232, 232, 0.10);
+    width: 100px;
+    border-left: 5px solid var(--tal-primary-color);
+}
+
+.contact-tal-right-area h2 {
+    color: #fff;
+}
+
+.contact-tal-right-area p {
+    color: #fff;
+}
+
+.single-tal-contact-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.single-tal-contact-area a {
+    color: #fff;
+}
+
+.single-tal-contact-area i {
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--tal-primary-color);
+    background-color: var(--tal-secondary-color);
+}
+
+.all-single-contact-area {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* --------------------------------------- */
+/* contact-form */
+/* --------------------------------------- */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+    display: flex;
+    align-items: flex-start;
+    gap: 28px;
+    color: #FFF;
+    font-family: var(--tal-primary-font-family);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: #23212A;
+    padding: 20px;
+}
+
+/* ----------------------------- */
+/* tal-blog-area-all */
+/* ----------------------------- */
+.tal-blog-area-all {
+    padding-top: 121px;
+    padding-bottom: 121px;
+}
+
+.tal-headig-blog-area {
+    text-align: center;
+    border-bottom: 1px solid var(--tal-text-color);
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+}
+
+.tal-headig-blog-area h6 {
+    color: var(--tal-heading-color);
+    display: inline-flex;
+    padding: 3px 9px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: rgba(232, 232, 232, 0.10);
+    width: 100px;
+    border-left: 5px solid var(--tal-primary-color);
+}
+
+.single-tal-blog-area {
+    margin-bottom: 40px;
+}
+
+.single-blog-content-aarea {
+    display: flex;
+    gap: 30px;
+}
+
+.single-blog-cotent-claender {
+    border-right: 1px solid var(--tal-secondary-color);
+    padding-right: 30px;
+}
+
+.single-blog-cotent-claender i {
+    color: var(--tal-primary-color);
+    font-size: 40px;
+}
+
+.tal-blog-area-all {
+    text-align: center;
+}
+
+/* -------------------------------------- */
+/* footer area */
+/* -------------------------------------- */
+.tall-footer-all {
+    background: #091242;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.footer-contact-area-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.single-footer-content h3 {
+    color: #fff;
+    margin-bottom: 74px;
+    margin-left: 20px;
+
+}
+
+.single-footer-content ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.single-footer-content ul li {
+    list-style: none;
+
+}
+
+.single-footer-content ul a {
+    color: #fff;
+}
+
+.subscribe-form input {
+    display: flex;   
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    color: #999;
+    font-family: League Spartan;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 20px;
+    background-color: #091242;
+}
 
 /* ======================================================================================================== */
 /* for Tab screen */
 /* ======================================================================================================== */
-@media only screen and (min-width: 992px) {
+@media only screen and (max-width: 992px) {
     .container {
         max-width: 100%;
+    }
+
+    .tal-header-right .tal-btn {
+        display: none;
+
+    }
+
+    .header-top-area-all {
+        display: none;
+    }
+
+    .tal-all-hero-area {
+        padding-top: 249px;
+        padding-bottom: 200px;
+        margin-top: -80px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        z-index: 999;
+    }
+
+    .tal-why-us-area {
+        background: #FFF;
+        padding: 40px;
+        position: static;
+
+    }
+
+    .why-us-thumb-area {
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        position: relative;
+    }
+
+    .tal-why-us-area-all {
+        margin-top: 0;
+
+    }
+
+    .tall-across-area {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tall-why-choose-area-all {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .why-choose-area-thumb img {
+        width: 100%;
+    }
+
+    .tal-header-main-area-area-all {
+        z-index: 9999;
+    }
+
+    .whyus-thumb-img {
+        position: absolute;
+        bottom: -137px;
+        left: 12px;
+    }
+
+    .single-team-area {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
     }
 
 }
@@ -119,8 +882,22 @@ li {
 /* ============================================================================================================ */
 /* for moabile screen */
 /* ============================================================================================================ */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
     .container {
         max-width: 100%;
+    }
+
+    .tal-header-right .tal-btn {
+        display: none;
+
+    }
+
+    .header-top-area-all {
+        display: none;
+    }
+
+    .single-team-area {
+        display: block;
+
     }
 }
