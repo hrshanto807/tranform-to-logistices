@@ -1016,10 +1016,42 @@ li .dropdown-toggle::after {
     position: absolute;
     left: -30px;
 }
-.tal-service-details-area-all{
+
+.tal-service-details-area-all {
     padding-top: 121px;
     padding-bottom: 121px;
 }
+
+
+/* ----------------------------------------- */
+/* project area */
+/* ----------------------------------------- */
+.tal-project-area-all {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+.project-thumb{
+    margin-bottom: 30px;
+}
+.project-thumb img {
+    width: 100%;
+}
+
+
+.project-thumb i {
+    position: absolute;
+    top: 23px;
+    left: 32px;
+    padding: 145px;
+    background-color: #091242;
+    color: #fff;
+    display: none;
+
+}
+.project-thumb:hover i{
+    display: block;
+}
+
 
 /* ======================================================================================================== */
 /* for Tab screen */
@@ -1090,7 +1122,8 @@ li .dropdown-toggle::after {
         flex-direction: column;
         margin-bottom: 30px;
     }
-    .service-details-content-area img{
+
+    .service-details-content-area img {
         width: 100%;
     }
 
