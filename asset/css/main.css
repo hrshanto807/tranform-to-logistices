@@ -585,6 +585,11 @@ li .dropdown-toggle::after {
 
 }
 
+.single-team-area {
+
+    margin-bottom: 40px;
+}
+
 .single-team-area-content h4 {
     color: #FFF;
     font-family: Rubik;
@@ -1030,9 +1035,11 @@ li .dropdown-toggle::after {
     padding-top: 200px;
     padding-bottom: 200px;
 }
-.project-thumb{
+
+.project-thumb {
     margin-bottom: 30px;
 }
+
 .project-thumb img {
     width: 100%;
 }
@@ -1048,7 +1055,8 @@ li .dropdown-toggle::after {
     display: none;
 
 }
-.project-thumb:hover i{
+
+.project-thumb:hover i {
     display: block;
 }
 
