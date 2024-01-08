@@ -615,6 +615,13 @@ li .dropdown-toggle::after {
 /* ------------------------------------ */
 /* contact-tal-right-area */
 /* ------------------------------------ */
+.contact-form-area{
+    width: 954px;
+    background-color: #091242;
+    padding: 80px;
+    margin-top: 121px;
+    margin-bottom: 121px;
+}
 .tall-all-contact-form {
     display: flex;
     padding-top: 143px;
@@ -699,7 +706,7 @@ li .dropdown-toggle::after {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    background-color: #23212A;
+    background-color: #091242;
     padding: 20px;
 }
 
@@ -1133,6 +1140,13 @@ li .dropdown-toggle::after {
 
     .service-details-content-area img {
         width: 100%;
+    }
+    .contact-form-area{
+        width:100%;
+        background-color: #091242;
+        padding: 40px;
+        margin-top: 8px;
+        margin-bottom: 8px;
     }
 
 }
