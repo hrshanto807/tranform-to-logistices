@@ -947,7 +947,7 @@ li .dropdown-toggle::after {
 }
 
 .single-accordian {
-    background-color: #f5f7fa;   
+    background-color: #f5f7fa;
     margin-bottom: 10px;
 }
 
@@ -979,19 +979,47 @@ li .dropdown-toggle::after {
 .single-accordian-tittle i.fa-chevron-down {
     display: none;
 }
+
 /* brand logo
  */
- .tal-brand-logo-all{
+.tal-brand-logo-all {
     padding-top: 121px;
     padding-bottom: 121px;
- }
- .brand-logo-img{
+}
+
+.brand-logo-img {
     background-color: var(--tal-secondary-color);
     padding: 98px 107px;
     display: flex;
     justify-content: space-between;
- }
+}
 
+/* ------------------------------------------ */
+/* services details area */
+/* ------------------------------------------ */
+
+.service-li-area {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.service-li-area li {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    position: relative;
+}
+
+.service-li-area li::before {
+    content: "\f30b";
+    font-family: 'Fontawesome';
+    position: absolute;
+    left: -30px;
+}
+.tal-service-details-area-all{
+    padding-top: 121px;
+    padding-bottom: 121px;
+}
 
 /* ======================================================================================================== */
 /* for Tab screen */
@@ -1061,6 +1089,9 @@ li .dropdown-toggle::after {
         display: flex;
         flex-direction: column;
         margin-bottom: 30px;
+    }
+    .service-details-content-area img{
+        width: 100%;
     }
 
 }
