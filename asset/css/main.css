@@ -713,7 +713,8 @@ li .dropdown-toggle::after {
     padding-bottom: 30px;
 }
 
-.tal-headig-blog-area h6 {
+.tal-headig-blog-area h6,
+.about-us-tal-content-area-all h6 {
     color: var(--tal-heading-color);
     display: inline-flex;
     padding: 3px 9px;
@@ -787,7 +788,7 @@ li .dropdown-toggle::after {
 }
 
 .subscribe-form input {
-    display: flex;   
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
@@ -800,6 +801,197 @@ li .dropdown-toggle::after {
     padding: 20px;
     background-color: #091242;
 }
+
+/* ------------------------------------------------------------------- */
+/* about Us */
+/* ------------------------------------------------------------------- */
+/* ----------------- */
+/* tab */
+/* ----------------- */
+/* Styles for tabs and content */
+.tall-about-us-all-area {
+    padding-top: 121px;
+}
+
+.about-us-tab-area-start .tabs {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.about-us-tab-area-start .tab {
+    margin-right: 10px;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f2f2f2;
+}
+
+.about-us-tab-area-start .tab:hover {
+    background-color: var(--tal-primary-color);
+    color: #fff;
+}
+
+.about-us-tab-area-start .tab-content {
+    display: none;
+}
+
+.about-us-tab-area-start .active-tab-content {
+    display: block;
+}
+
+/* -------------------------- */
+/* service-headeing */
+/* -------------------------- */
+.service-headeing {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.single-what-do-we-do-service {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 53px;
+}
+
+.single-what-do-we-do-service i {
+    font-size: 40px;
+    color: var(--tal-primary-color);
+}
+
+/* ----------------------------------------- */
+/* tal-pricing-area-all */
+/* ----------------------------------------- */
+.tal-pricing-area-all {
+    padding-bottom: 121px;
+}
+
+.single-price-list-area {
+    display: flex;
+    flex-direction: column;
+    padding: 61px 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.single-price-list-area .price-tal {
+    display: flex;
+    align-items: end;
+
+}
+
+.single-price-list-area h2 {
+    color: #1C1F35;
+    text-align: center;
+    font-family: Rubik;
+    font-size: 85px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 17px;
+
+}
+
+.single-price-list-area li {
+    color: #1C1F35;
+    text-align: center;
+    font-family: Rubik;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 17px;
+
+}
+
+.single-price-list-area:hover {
+    background-color: var(--tal-secondary-color);
+    cursor: pointer;
+
+}
+
+.single-price-list-area:hover h2 {
+    color: #fff;
+
+}
+
+.single-price-list-area:hover p {
+    color: #fff;
+
+}
+
+.single-price-list-area:hover li {
+    color: #fff;
+
+}
+
+.single-price-list-area:hover h3 {
+    color: #fff;
+
+}
+
+.single-price-list-area:hover .tal-btn-2 {
+    color: #fff;
+    background-image: var(--tal-image);
+
+}
+
+/* --------------------------------------- */
+/* Faq Accordion */
+/* --------------------------------------- */
+.faq-content-area {
+    margin-top: 66px;
+}
+
+.single-accordian {
+    background-color: #f5f7fa;   
+    margin-bottom: 10px;
+}
+
+.single-accordian .single-accordian-tittle {
+
+    padding: 20px;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.single-accordian-content {
+    padding: 15px;
+    display: none;
+}
+
+.active-accordian i.fa-chevron-right {
+    display: none;
+}
+
+.active-accordian.single-accordian-tittle i.fa-chevron-down {
+    display: block;
+    color: var(--tal-primary-color);
+}
+
+.single-accordian-tittle i.fa-chevron-down {
+    display: none;
+}
+/* brand logo
+ */
+ .tal-brand-logo-all{
+    padding-top: 121px;
+    padding-bottom: 121px;
+ }
+ .brand-logo-img{
+    background-color: var(--tal-secondary-color);
+    padding: 98px 107px;
+    display: flex;
+    justify-content: space-between;
+ }
+
 
 /* ======================================================================================================== */
 /* for Tab screen */
@@ -819,12 +1011,6 @@ li .dropdown-toggle::after {
     }
 
     .tal-all-hero-area {
-        padding-top: 249px;
-        padding-bottom: 200px;
-        margin-top: -80px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
         z-index: 999;
     }
 
