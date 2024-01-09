@@ -1077,6 +1077,13 @@ li .dropdown-toggle::after {
     display: flex;
     gap: 84px;
 }
+.error-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
 
 /* ======================================================================================================== */
 /* for Tab screen */
