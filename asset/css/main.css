@@ -615,13 +615,14 @@ li .dropdown-toggle::after {
 /* ------------------------------------ */
 /* contact-tal-right-area */
 /* ------------------------------------ */
-.contact-form-area{
+.contact-form-area {
     width: 954px;
     background-color: #091242;
     padding: 80px;
     margin-top: 121px;
     margin-bottom: 121px;
 }
+
 .tall-all-contact-form {
     display: flex;
     padding-top: 143px;
@@ -726,7 +727,9 @@ li .dropdown-toggle::after {
 }
 
 .tal-headig-blog-area h6,
-.about-us-tal-content-area-all h6 {
+.about-us-tal-content-area-all h6,
+.tal-why-choose-content-area h6,
+.service-headeing h6 {
     color: var(--tal-heading-color);
     display: inline-flex;
     padding: 3px 9px;
@@ -1067,6 +1070,13 @@ li .dropdown-toggle::after {
     display: block;
 }
 
+/* -------------------------------------- */
+/* single-tall-choose-area */
+/* -------------------------------------- */
+.single-all-tal-why-choose-area {
+    display: flex;
+    gap: 84px;
+}
 
 /* ======================================================================================================== */
 /* for Tab screen */
@@ -1141,8 +1151,9 @@ li .dropdown-toggle::after {
     .service-details-content-area img {
         width: 100%;
     }
-    .contact-form-area{
-        width:100%;
+
+    .contact-form-area {
+        width: 100%;
         background-color: #091242;
         padding: 40px;
         margin-top: 8px;
@@ -1159,6 +1170,10 @@ li .dropdown-toggle::after {
         max-width: 100%;
     }
 
+    img {
+        max-width: 100%;
+    }
+
     .tal-header-right .tal-btn {
         display: none;
 
@@ -1171,5 +1186,14 @@ li .dropdown-toggle::after {
     .single-team-area {
         display: block;
 
+    }
+    .brand-logo-img{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .brand-logo-img img{
+        border: 2px solid var(--tal-text-color);
+        padding: 20px;
     }
 }
