@@ -1077,13 +1077,38 @@ li .dropdown-toggle::after {
     display: flex;
     gap: 84px;
 }
-.error-page{
+
+.error-page {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
+
+/* ------------------------------ */
+/* project-details-heading-area-all */
+/* ------------------------------ */
+.project-details-heading-area-all {
+    padding-top: 121px;
+    padding-bottom: 121px;
+}
+
+.single-project-details-heading {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 100px;
+}
+
+.project-video-content-area {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 
 /* ======================================================================================================== */
 /* for Tab screen */
@@ -1167,6 +1192,7 @@ li .dropdown-toggle::after {
         margin-bottom: 8px;
     }
 
+
 }
 
 /* ============================================================================================================ */
@@ -1194,12 +1220,14 @@ li .dropdown-toggle::after {
         display: block;
 
     }
-    .brand-logo-img{
+
+    .brand-logo-img {
         display: flex;
         flex-direction: column;
         gap: 30px;
     }
-    .brand-logo-img img{
+
+    .brand-logo-img img {
         border: 2px solid var(--tal-text-color);
         padding: 20px;
     }

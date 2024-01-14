@@ -5,22 +5,22 @@
         responsive: {
             0: {
                 items: 1,
-                margin:10,
+                margin: 10,
             },
             600: {
                 items: 1,
-                margin:20,
+                margin: 20,
             },
             1000: {
                 items: 2,
-                margin:90,
+                margin: 90,
             }
         },
         autoplay: true,
         autoplayTimeout: 2000,
-        autoplayHoverPause: true,        
+        autoplayHoverPause: true,
 
-    });  
+    });
     // faqs
 
 
@@ -31,18 +31,44 @@
 
         $(this).parent('.single-accordian').siblings('.single-accordian').children('.single-accordian-tittle').removeClass('active-accordian')
     });
-  
+    // popup viedeo
+    $(document).ready(function () {
+        $('.popup-service-details').magnificPopup({
+            disableOn: 700,
+            type: 'iframe',
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false,
+
+            fixedContentPos: false
+        });
+    });
+
+    // popup viedeo
+    $(document).ready(function () {
+        $('.popup-youtube').magnificPopup({
+            disableOn: 700,
+            type: 'iframe',
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false,
+
+            fixedContentPos: false
+        });
+    });
+
+
 
 })(jQuery);
- // JavaScript to handle tab switching
- function showTab(tabId) {
+// JavaScript to handle tab switching
+function showTab(tabId) {
     // Hide all tab contents
     var tabContents = document.querySelectorAll('.tab-content');
-    tabContents.forEach(function(tabContent) {
-      tabContent.style.display = 'none';
+    tabContents.forEach(function (tabContent) {
+        tabContent.style.display = 'none';
     });
 
     // Show the selected tab content
     var selectedTab = document.getElementById(tabId);
     selectedTab.style.display = 'block';
-  }
+}
