@@ -1,5 +1,13 @@
 <?php
 define('TRANSFORM_THEME_INC', get_template_directory());
+// GEnarel Here
+
+function all_tranform_theme_genarel(){
+    add_theme_support('post-thumbnails');
+    add_image_size('tal-blog-thumb', 453, 308,true);
+
+};
+add_action('after_setup_theme','all_tranform_theme_genarel');
 // functions all scripts here
 function transform_scripts_all()
 {
@@ -21,6 +29,25 @@ function transform_scripts_all()
     wp_enqueue_script('tal-custom-js', get_theme_file_uri('/asset/js/custom.js'), array('jquery'), '3.7.1', true);
 };
 add_action('wp_enqueue_scripts', 'transform_scripts_all');
+
+
+// A Custom function for get an option
+if (!function_exists('tranform_get_option')) {
+    function tranform_get_option($option = '', $default = null)
+    {
+        $options = get_option('tranform_framwork'); // Attention: Set your unique id of the framework
+        return (isset($options[$option])) ? $options[$option] : $default;
+    }
+}
+
+
+// fix for $asset_path_issue
+function aep_social_meta_icon() {
+    return get_template_directory_uri() . '/inc/cmb2-aiconselect'; //Change to correct path.
+}
+
+add_filter( 'sa_cmb2_field_faiconselect_asset_path', 'aep_social_meta_icon' );
+
 
 // file inclclude area here
 require_once TRANSFORM_THEME_INC . '/inc/codestar-framework/codestar-framework.php';

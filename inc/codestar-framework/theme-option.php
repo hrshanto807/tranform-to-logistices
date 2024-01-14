@@ -5,21 +5,21 @@
 //
 // Set a unique slug-like ID
 //
-$prefix = 'aepexpert_framwork';
+$prefix = 'tranform_framwork';
 
 //
 // Create options
 //
 CSF::createOptions($prefix, array(
   'menu_title' => 'Theme Option',
-  'menu_slug'  => 'aep-theme-option',
+  'menu_slug'  => 'tranform-theme-option',
 
 ));
 
  // Logo
 CSF::createSection($prefix, array(
-  'id'    => 'aep-logo',
-  'title' => 'Aep Theme Logo ',
+  'id'    => 'tranform-logo',
+  'title' => 'tranform Theme Logo ',
   'fields' => array(
     array(
       'id'     => 'logo-header',
@@ -34,13 +34,13 @@ CSF::createSection($prefix, array(
     ))));
 // header top
 CSF::createSection($prefix, array(
-  'id'    => 'aep-header-top',
+  'id'    => 'tranform-header-top',
   'title' => 'Header Top',
   'icon'  => 'far fa-images',
 ));
 // home header top content
 CSF::createSection($prefix, array(
-  'parent'    => 'aep-header-top',
+  'parent'    => 'tranform-header-top',
   'title' => 'Home Page Hero ',
   'fields' => array(
     array(
@@ -67,12 +67,12 @@ CSF::createSection($prefix, array(
 )));
 // Social Profile
 CSF::createSection($prefix, array(
-  'id'    => 'aep-header-social',
-  'title' => 'Aep Theme Social ',
+  'id'    => 'tranform-header-social',
+  'title' => 'tranform Theme Social ',
 ));
 // home header social
 CSF::createSection($prefix, array(
-  'parent'    => 'aep-header-social',
+  'parent'    => 'tranform-header-social',
   'title' => 'Header Social ',
   'fields' => array(
     array(
@@ -100,7 +100,7 @@ CSF::createSection($prefix, array(
 
 // Footer social
 CSF::createSection($prefix, array(
-  'parent'    => 'aep-header-social',
+  'parent'    => 'tranform-header-social',
   'title' => 'Footer Social ',
   'fields' => array(
     array(
@@ -130,14 +130,14 @@ CSF::createSection($prefix, array(
 // Hero Bg area
 //
 CSF::createSection($prefix, array(
-  'id'    => 'aep-hero-bg',
+  'id'    => 'tranform-hero-bg',
   'title' => 'All Hero Section Here',
   'icon'  => 'far fa-images',
 ));
 
 // home hero
 CSF::createSection($prefix, array(
-  'parent'    => 'aep-hero-bg',
+  'parent'    => 'tranform-hero-bg',
   'title' => 'Home Page Hero ',
   'fields' => array(
     array(
@@ -179,7 +179,7 @@ CSF::createSection($prefix, array(
 ));
 // blog hero
 CSF::createSection($prefix, array(
-  'parent'    => 'aep-hero-bg',
+  'parent'    => 'tranform-hero-bg',
   'title' => 'Blog Page Hero BG',
   'fields' => array(
     array(
@@ -197,7 +197,7 @@ CSF::createSection($prefix, array(
 
 // single post hero
 CSF::createSection($prefix, array(
-  'parent'    => 'aep-hero-bg',
+  'parent'    => 'tranform-hero-bg',
   'title' => 'Single Page Hero BG',
   'fields' => array(
     array(
@@ -209,7 +209,7 @@ CSF::createSection($prefix, array(
 ));
 // About hero
 CSF::createSection($prefix, array(
-  'parent'    => 'aep-hero-bg',
+  'parent'    => 'tranform-hero-bg',
   'title' => 'About Page Hero BG',
   'fields' => array(
     array(
@@ -226,7 +226,7 @@ CSF::createSection($prefix, array(
 ));
 // team hero
 CSF::createSection($prefix, array(
-  'parent'    => 'aep-hero-bg',
+  'parent'    => 'tranform-hero-bg',
   'title' => 'Team Page Hero BG',
   'fields' => array(
     array(
@@ -243,7 +243,7 @@ CSF::createSection($prefix, array(
 ));
 // sevices hero
 CSF::createSection($prefix, array(
-  'parent'    => 'aep-hero-bg',
+  'parent'    => 'tranform-hero-bg',
   'title' => 'Service Page Hero BG',
   'fields' => array(
     array(
@@ -261,7 +261,7 @@ CSF::createSection($prefix, array(
 
 // Case hero bg
 CSF::createSection($prefix, array(
-  'parent'    => 'aep-hero-bg',
+  'parent'    => 'tranform-hero-bg',
   'title' => 'Case Studies Page Hero BG',
   'fields' => array(
     array(
@@ -273,7 +273,7 @@ CSF::createSection($prefix, array(
 ));
 // Case single hero 
 CSF::createSection($prefix, array(
-  'parent'    => 'aep-hero-bg',
+  'parent'    => 'tranform-hero-bg',
   'title' => 'Single Service Page Hero BG',
   'fields' => array(
     array(
@@ -291,7 +291,7 @@ CSF::createSection($prefix, array(
 ));
 // Case single hero 
 CSF::createSection($prefix, array(
-  'parent'    => 'aep-hero-bg',
+  'parent'    => 'tranform-hero-bg',
   'title' => 'Single Case Studies Page Hero BG',
   'fields' => array(
     array(
@@ -320,7 +320,7 @@ CSF::createSection($prefix, array(
 
 // contact hero bg
 CSF::createSection($prefix, array(
-  'parent'    => 'aep-hero-bg',
+  'parent'    => 'tranform-hero-bg',
   'title' => 'Contact Page Hero BG',
   'fields' => array(
     array(
@@ -337,7 +337,7 @@ CSF::createSection($prefix, array(
 ));
 //licence hero bg
 CSF::createSection($prefix, array(
-  'parent'    => 'aep-hero-bg',
+  'parent'    => 'tranform-hero-bg',
   'title' => 'License Page Hero BG',
   'fields' => array(
     array(
@@ -354,7 +354,7 @@ CSF::createSection($prefix, array(
 ));
 // change log hero bg
 CSF::createSection($prefix, array(
-  'parent'    => 'aep-hero-bg',
+  'parent'    => 'tranform-hero-bg',
   'title' => 'Change Log Page Hero BG',
   'fields' => array(
     array(
@@ -388,13 +388,13 @@ CSF::createSection($prefix, array(
 
 // all section heading Content Area 
 CSF::createSection($prefix, array(
-  'id'    => 'aep-section-content',
+  'id'    => 'tranform-section-content',
   'title' => 'All Section Heading Content',
   'icon'  => 'fas fa-heading',
 ));
 // service heading area
 CSF::createSection($prefix, array(
-  'parent'    => 'aep-section-content',
+  'parent'    => 'tranform-section-content',
   'title' => 'Services Content',
   'fields' => array(
     array(
@@ -411,7 +411,7 @@ CSF::createSection($prefix, array(
 ));
 // blog heading area
 CSF::createSection($prefix, array(
-  'parent'    => 'aep-section-content',
+  'parent'    => 'tranform-section-content',
   'title' => 'Blog Content',
   'fields' => array(
     array(
@@ -439,7 +439,7 @@ CSF::createSection($prefix, array(
 
 // team heading area
 CSF::createSection($prefix, array(
-  'parent'    => 'aep-section-content',
+  'parent'    => 'tranform-section-content',
   'title' => 'Team Content',
   'fields' => array(
     array(
@@ -467,12 +467,12 @@ CSF::createSection($prefix, array(
 
 // all home here themeoption
 CSF::createSection($prefix, array(
-  'id'    => 'aep-home',
+  'id'    => 'tranform-home',
   'title' => 'Home Page Theme Option ',
 ));
 // Home About
 CSF::createSection($prefix, array(
-  'parent'    => 'aep-home',
+  'parent'    => 'tranform-home',
   'title' => 'Home Page About ',
   'fields' => array(
     array(
@@ -545,7 +545,7 @@ CSF::createSection($prefix, array(
 )));
 // Home Process
 CSF::createSection($prefix, array(
-  'parent'    => 'aep-home',
+  'parent'    => 'tranform-home',
   'title' => 'Home Page Proccess ',
   'fields' => array( 
    
@@ -592,7 +592,7 @@ CSF::createSection($prefix, array(
 )));
 // Home Groth
 CSF::createSection($prefix, array(
-  'parent'    => 'aep-home',
+  'parent'    => 'tranform-home',
   'title' => 'Home Page Growing ',
   'fields' => array( 
    
@@ -639,7 +639,7 @@ CSF::createSection($prefix, array(
 )));
 // Home Gellary
 CSF::createSection($prefix, array(
-  'parent'    => 'aep-home',
+  'parent'    => 'tranform-home',
   'title' => 'Home Page Gellary ',
   'fields' => array(  
    
@@ -667,7 +667,7 @@ CSF::createSection($prefix, array(
 )));
 // Home Skill
 CSF::createSection($prefix, array(
-  'parent'    => 'aep-home',
+  'parent'    => 'tranform-home',
   'title' => 'Home Page Skill ',
   'fields' => array(  
    
@@ -693,7 +693,7 @@ CSF::createSection($prefix, array(
 )));
 // Home Testimonial
 CSF::createSection($prefix, array(
-  'parent'    => 'aep-home',
+  'parent'    => 'tranform-home',
   'title' => 'Home Page Feedback ',
   'fields' => array( 
     array(
@@ -732,7 +732,7 @@ CSF::createSection($prefix, array(
 )));
 // Home Book Now
 CSF::createSection($prefix, array(
-  'parent'    => 'aep-home',
+  'parent'    => 'tranform-home',
   'title' => 'Home Page Book Now ',
   'fields' => array(     
    
@@ -772,9 +772,27 @@ CSF::createSection($prefix, array(
     ),   
    
 )));
+// Blog Top area
+CSF::createSection($prefix, array(
+  'id'    => 'tranform-section-blog',
+  'title' => 'blog Section',
+  'fields' => array(   
+    array(
+      'id' => 'blog-name',
+      'title' => 'blog Name',
+      'type'  => 'text',
+    ),
+    array(
+      'id' => 'blog-title',
+      'title' => 'blog Title',
+      'type'  => 'text',
+    ),
+
+  )
+));
 // ready to talk area area
 CSF::createSection($prefix, array(
-  'id'    => 'aep-section-ready-talk',
+  'id'    => 'tranform-section-ready-talk',
   'title' => 'Ready To talk Section',
   'fields' => array(
     array(
@@ -803,7 +821,7 @@ CSF::createSection($prefix, array(
 
 // newsletter area
 CSF::createSection($prefix, array(
-  'id'    => 'aep-section-newsletter',
+  'id'    => 'tranform-section-newsletter',
   'title' => 'Newsletter Section',
   'fields' => array(
     array(
@@ -828,7 +846,7 @@ CSF::createSection($prefix, array(
 
 // Contuct us Left area area
 CSF::createSection($prefix, array(
-  'id'    => 'aep-section-contact',
+  'id'    => 'tranform-section-contact',
   'title' => 'Contact Right Section',
   'fields' => array(
 
@@ -877,13 +895,13 @@ CSF::createSection($prefix, array(
 ));
 // sevices  
 CSF::createSection($prefix, array(
-  'id'    => 'aep-section-srvice',
+  'id'    => 'tranform-section-srvice',
   'title' => 'Services  Section',
 ));
 
 // Single Sevice Testi
 CSF::createSection($prefix, array(
-  'parent'    => 'aep-section-srvice',
+  'parent'    => 'tranform-section-srvice',
   'title' => 'SerVice Consult Section',
   'fields' => array(
 
@@ -938,7 +956,7 @@ CSF::createSection($prefix, array(
 ));
 // Consulting service
 CSF::createSection($prefix, array(
-  'parent'    => 'aep-section-srvice',
+  'parent'    => 'tranform-section-srvice',
   'title' => 'SerVice Consult Section',
   'fields' => array(
 
@@ -993,7 +1011,7 @@ CSF::createSection($prefix, array(
 ));
 // sevices Prices List 
 CSF::createSection($prefix, array(
-  'parent'    => 'aep-section-srvice',
+  'parent'    => 'tranform-section-srvice',
   'title' => 'SerVice Price Section',
   'fields' => array(
 
@@ -1066,7 +1084,7 @@ CSF::createSection($prefix, array(
 ));
 // Brand Logo
 CSF::createSection($prefix, array(
-  'id'    => 'aep-brand-logo',
+  'id'    => 'tranform-brand-logo',
   'title' => 'Brand LOgo Area',
   'fields' => array(
     array(
@@ -1089,7 +1107,7 @@ CSF::createSection($prefix, array(
 
 // sevices History Area
 CSF::createSection($prefix, array(
-  'parent'    => 'aep-section-srvice',
+  'parent'    => 'tranform-section-srvice',
   'title' => 'History Area',
   'fields' => array(
 
@@ -1128,7 +1146,7 @@ CSF::createSection($prefix, array(
 ));
 // Single Service Expect Area
 CSF::createSection($prefix, array(
-  'parent'    => 'aep-section-srvice',
+  'parent'    => 'tranform-section-srvice',
   'title' => 'Single Service Expect Section',
   'fields' => array(
 
@@ -1183,7 +1201,7 @@ CSF::createSection($prefix, array(
 
 //404 Page 
 CSF::createSection($prefix, array(
-  'id'    => 'aep-error-page',
+  'id'    => 'tranform-error-page',
   'title' => 'Error Page',
   'fields' => array(
     array(
