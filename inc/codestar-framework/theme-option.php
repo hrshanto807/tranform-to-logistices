@@ -263,6 +263,19 @@ CSF::createSection($prefix, array(
     )
   )
 ));
+// sevices single hero
+CSF::createSection($prefix, array(
+  'parent'    => 'tranform-hero-bg',
+  'title' => 'Service single Page Hero BG',
+  'fields' => array(
+    array(
+      'id' => 'service-single-hero-bg',
+      'title' => 'Service single Hero Bg',
+      'type'  => 'media',
+    ),    
+  )
+));
+
 
 // Case hero bg
 CSF::createSection($prefix, array(
@@ -274,24 +287,6 @@ CSF::createSection($prefix, array(
       'title' => 'Case Studies Hero Bg',
       'type'  => 'media',
     ),
-  )
-));
-// Case single hero 
-CSF::createSection($prefix, array(
-  'parent'    => 'tranform-hero-bg',
-  'title' => 'Single Service Page Hero BG',
-  'fields' => array(
-    array(
-      'id' => 'service-single-hero-bg',
-      'title' => ' Single Service Hero Bg',
-      'type'  => 'media',
-    ),
-    array(
-      'id' => 'service-single-hero-name',
-      'title' => ' Single Service Name',
-      'type'  => 'text',
-    ),
-
   )
 ));
 // Case single hero 
