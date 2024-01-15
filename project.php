@@ -5,7 +5,7 @@
 get_header();
 ?>
         <!-- tal hero section area start -->
-        <section class="tal-all-hero-area" style="background-image: url(<?php $project_hero_bg = tranform_get_option('project-hero-bg');
+        <section class="tal-all-hero-area" style="background-image: url(<?php $project_hero_bg = tranform_get_option('contact-hero-bg');
                                                                 if (!empty($project_hero_bg)) {
                                                                     echo esc_url($project_hero_bg['url']);
                                                                 };

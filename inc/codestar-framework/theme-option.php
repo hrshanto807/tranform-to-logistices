@@ -315,12 +315,7 @@ CSF::createSection($prefix, array(
       'id' => 'contact-hero-bg',
       'title' => 'Contact Hero Bg',
       'type'  => 'media',
-    ),
-    array(
-      'id' => 'contact-hero-title',
-      'title' => 'Contact Hero Title',
-      'type'  => 'text',
-    )
+    ),   
   )
 ));
 //licence hero bg
@@ -835,17 +830,11 @@ CSF::createSection($prefix, array(
 
   )
 ));
-// Contuct us Left area area
+// Contact us heading area
 CSF::createSection($prefix, array(
   'id'    => 'tranform-section-contact',
-  'title' => 'Contact Right Section',
-  'fields' => array(
-
-    array(
-      'id' => 'contact-us-name',
-      'title' => 'Contact us Name',
-      'type'  => 'text',
-    ),
+  'title' => 'Contact Heading Section',
+  'fields' => array( 
     array(
       'id' => 'contact-us-title',
       'title' => 'Contact us Title',
@@ -861,6 +850,7 @@ CSF::createSection($prefix, array(
       'type'   => 'repeater',
       'title'  => 'Contact_us NUM',
       'button_title' => 'ADD ANOTHER NUM',
+      'limit' => 3,
       'fields' => array(
 
         array(
@@ -872,16 +862,19 @@ CSF::createSection($prefix, array(
           'id'    => 'contact-title',
           'type'  => 'text',
           'title' => 'title'
-        ),
+        ),       
+        array(
+          'id'    => 'contact-link',
+          'type'  => 'text',
+          'title' => 'link Like(mailto:,tel:)'
+        ),       
         array(
           'id'    => 'contact-content',
           'type'  => 'text',
-          'title' => 'COntent'
-        ),
-
+          'title' => 'Content'
+        ),       
       ),
     ),
-
   )
 ));
 // sevices  
@@ -941,65 +934,53 @@ CSF::createSection($prefix, array(
 
 
 ));
-// Consulting service
+// FAQS Area
 CSF::createSection($prefix, array(
-  'parent'    => 'tranform-section-srvice',
-  'title' => 'SerVice Consult Section',
+  'id'    => 'tranform-section-faqs',
+  'title' => 'Faqs Section',
   'fields' => array(
 
     array(
-      'id' => 'conult-services-bg',
-      'title' => 'Consult Bg',
-      'type'  => 'media',
-    ),
-    array(
-      'id' => 'conult-services-thumb',
-      'title' => 'Consult Thumb',
-      'type'  => 'media',
-    ),
-    array(
-      'id' => 'conult-services-name',
-      'title' => 'Consult name',
+      'id' => 'faqs-name',
+      'title' => 'Faqs Name',
       'type'  => 'text',
     ),
     array(
-      'id' => 'conult-services-title',
-      'title' => 'Consult Title',
+      'id' => 'faqs-title',
+      'title' => 'Faqs Title',
       'type'  => 'text',
     ),
     array(
-      'id'     => 'conslut-repeater',
+      'id' => 'faqs-thumb',
+      'title' => 'Faqs thumb',
+      'type'  => 'media',
+    ),
+    array(
+      'id'     => 'faqs-repeater',
       'type'   => 'repeater',
-      'title'  => 'Consult Content Area',
-      'button_title' => 'Add Consult List',
+      'title'  => 'FAQ Area',
+      'button_title' => 'Add FAQ',
       'fields' => array(
 
         array(
-          'id'    => 'conult-services-icon',
-          'type'  => 'icon',
-          'title' => 'Consult Icon'
-        ),
-        array(
-          'id'    => 'conult-services-heading',
+          'id'    => 'faqs_heading',
           'type'  => 'text',
-          'title' => 'Consult Heading Tag'
+          'title' => 'Faqs Heading'
         ),
         array(
-          'id'    => 'conult-services-content',
+          'id'    => 'faqs_Content',
           'type'  => 'textarea',
-          'title' => 'Contsult Content'
+          'title' => 'Faq Content'
+        ),
 
-        )
       )
     )
   )
-
-
 ));
-// sevices Prices List 
+// Prices List 
 CSF::createSection($prefix, array(
-  'parent'    => 'tranform-section-srvice',
-  'title' => 'SerVice Price Section',
+  'id'    => 'tranform-section-price',
+  'title' => 'Price Section',
   'fields' => array(
 
     array(
@@ -1091,101 +1072,6 @@ CSF::createSection($prefix, array(
     )
   )
 ));
-
-// sevices History Area
-CSF::createSection($prefix, array(
-  'parent'    => 'tranform-section-srvice',
-  'title' => 'History Area',
-  'fields' => array(
-
-    array(
-      'id'    => 'histoy-bg',
-      'type'  => 'media',
-      'title' => 'History BG'
-    ),
-    array(
-      'id'    => 'histoy-name',
-      'type'  => 'text',
-      'title' => 'History Name'
-    ),
-    array(
-      'id'    => 'histoy-content',
-      'type'  => 'textarea',
-      'title' => 'History Content'
-    ),
-    array(
-      'id'    => 'histoy-title',
-      'type'  => 'text',
-      'title' => 'History Title'
-    ),
-    array(
-      'id'    => 'histoy-link-video',
-      'type'  => 'text',
-      'title' => 'Video Link'
-    ),
-    array(
-      'id'    => 'histoy-img',
-      'type'  => 'media',
-      'title' => 'History Image'
-    ),
-
-  )
-));
-// Single Service Expect Area
-CSF::createSection($prefix, array(
-  'parent'    => 'tranform-section-srvice',
-  'title' => 'Single Service Expect Section',
-  'fields' => array(
-
-    array(
-      'id' => 'expect-services-bg',
-      'title' => 'What Expect Bg',
-      'type'  => 'media',
-    ),
-    array(
-      'id' => 'expect-services-thumb',
-      'title' => 'What Expect Thumb',
-      'type'  => 'media',
-    ),
-    array(
-      'id' => 'expect-services-name',
-      'title' => 'What Expect name',
-      'type'  => 'text',
-    ),
-    array(
-      'id' => 'expect-services-title',
-      'title' => 'What Expect Title',
-      'type'  => 'text',
-    ),
-    array(
-      'id' => 'expect-services-content',
-      'title' => 'What Expect Content',
-      'type'  => 'textarea',
-    ),
-    array(
-      'id'     => 'expect-repeater',
-      'type'   => 'repeater',
-      'title'  => 'What Expect Content Area',
-      'button_title' => 'Add Consult List',
-      'limit' => 2,
-      'fields' => array(
-
-        array(
-          'id'    => 'expect-services-icon',
-          'type'  => 'icon',
-          'title' => 'What Expect Icon'
-        ),
-        array(
-          'id'    => 'expect-services-content',
-          'type'  => 'textarea',
-          'title' => 'What Expect Content'
-
-        )
-      )
-    )
-  )
-));
-
 //404 Page 
 CSF::createSection($prefix, array(
   'id'    => 'tranform-error-page',
