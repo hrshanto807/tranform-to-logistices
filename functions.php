@@ -5,6 +5,7 @@ define('TRANSFORM_THEME_INC', get_template_directory());
 function all_tranform_theme_genarel(){
     add_theme_support('post-thumbnails');
     add_image_size('tal-blog-thumb', 453, 308,true);
+    add_image_size('tal-service-thumb', 50, 56,false);
 
 };
 add_action('after_setup_theme','all_tranform_theme_genarel');
@@ -56,3 +57,4 @@ require_once TRANSFORM_THEME_INC . '/inc/CMB2-develop/init.php';
 require_once TRANSFORM_THEME_INC . '/inc/CMB2-develop/meta-option-fild.php';
 require_once TRANSFORM_THEME_INC . '/inc/cmb2-aiconselect/iconselect.php';
 require_once TRANSFORM_THEME_INC . '/inc/widget.php';
+require_once TRANSFORM_THEME_INC . '/inc/custom.php';

@@ -16,7 +16,7 @@ CSF::createOptions($prefix, array(
 
 ));
 
- // Logo
+// Logo
 CSF::createSection($prefix, array(
   'id'    => 'tranform-logo',
   'title' => 'tranform Theme Logo ',
@@ -24,14 +24,16 @@ CSF::createSection($prefix, array(
     array(
       'id'     => 'logo-header',
       'type'   => 'media',
-      'title'  => 'Header Logo',      
+      'title'  => 'Header Logo',
     ),
     array(
       'id'     => 'logo-footer',
       'type'   => 'media',
       'title'  => 'Footer Logo',
-      
-    ))));
+
+    )
+  )
+));
 // header top
 CSF::createSection($prefix, array(
   'id'    => 'tranform-header-top',
@@ -59,12 +61,13 @@ CSF::createSection($prefix, array(
           'id'    => 'header-left-content',
           'type'  => 'text',
           'title' => 'Write Time And Location'
-        ),      
+        ),
 
       ),
     ),
-   
-)));
+
+  )
+));
 // Social Profile
 CSF::createSection($prefix, array(
   'id'    => 'tranform-header-social',
@@ -91,12 +94,13 @@ CSF::createSection($prefix, array(
           'id'    => 'social-link',
           'type'  => 'text',
           'title' => 'Header Social Link'
-        ),      
+        ),
 
       ),
     ),
-   
-)));
+
+  )
+));
 
 // Footer social
 CSF::createSection($prefix, array(
@@ -119,12 +123,13 @@ CSF::createSection($prefix, array(
           'id'    => 'social-link-f',
           'type'  => 'text',
           'title' => 'Footer Social Link'
-        ),      
+        ),
 
       ),
     ),
-   
-)));
+
+  )
+));
 
 //
 // Hero Bg area
@@ -144,7 +149,7 @@ CSF::createSection($prefix, array(
       'id' => 'home-hero-bg',
       'title' => 'Home Hero Bg',
       'type'  => 'media',
-    ),    
+    ),
     array(
       'id' => 'home-hero-heading',
       'title' => 'Home Hero title',
@@ -423,7 +428,7 @@ CSF::createSection($prefix, array(
       'id' => 'blog-title',
       'title' => 'Blog Title',
       'type'  => 'text',
-    ),   
+    ),
   )
 ));
 
@@ -469,12 +474,12 @@ CSF::createSection($prefix, array(
       'id' => 'home-about-bg',
       'title' => 'Home About Bg',
       'type'  => 'media',
-    ),    
+    ),
     array(
       'id' => 'home-about-thumb',
       'title' => 'Home About Thumb',
       'type'  => 'media',
-    ),    
+    ),
     array(
       'id' => 'home-about-name',
       'title' => 'Home About Name',
@@ -530,15 +535,16 @@ CSF::createSection($prefix, array(
       'title' => 'Home About Market Expricens Title',
       'type'  => 'text',
     ),
-    
-    
-)));
+
+
+  )
+));
 // Home Process
 CSF::createSection($prefix, array(
   'parent'    => 'tranform-home',
   'title' => 'Home Page Proccess ',
-  'fields' => array( 
-   
+  'fields' => array(
+
     array(
       'id' => 'home-Proccess-name',
       'title' => 'Home Proccess Name',
@@ -548,7 +554,7 @@ CSF::createSection($prefix, array(
       'id' => 'home-Proccess-heading',
       'title' => 'Home Proccess Heading',
       'type'  => 'text',
-    ),   
+    ),
     array(
       'id' => 'home-Proccess-content',
       'title' => 'Home Proccess Content',
@@ -560,7 +566,7 @@ CSF::createSection($prefix, array(
       'title'  => 'Home Proccess Repeater',
       'button_title' => 'ADD ANOTHER Service',
       'fields' => array(
-        
+
         array(
           'id'    => 'Proccess-num',
           'type'  => 'text',
@@ -578,14 +584,15 @@ CSF::createSection($prefix, array(
         ),
 
       ),
-    ),   
-)));
+    ),
+  )
+));
 // Home Groth
 CSF::createSection($prefix, array(
   'parent'    => 'tranform-home',
   'title' => 'Home Page Growing ',
-  'fields' => array( 
-   
+  'fields' => array(
+
     array(
       'id' => 'home-Growing-name',
       'title' => 'Home Growing Name',
@@ -595,7 +602,7 @@ CSF::createSection($prefix, array(
       'id' => 'home-Growing-heading',
       'title' => 'Home Growing Heading',
       'type'  => 'text',
-    ),   
+    ),
     array(
       'id' => 'home-Growing-content',
       'title' => 'Home Growing Content',
@@ -607,7 +614,7 @@ CSF::createSection($prefix, array(
       'title'  => 'Home Growing Repeater',
       'button_title' => 'ADD ANOTHER Service',
       'fields' => array(
-        
+
         array(
           'id'    => 'Growing-icon',
           'type'  => 'icon',
@@ -625,14 +632,15 @@ CSF::createSection($prefix, array(
         ),
 
       ),
-    ),   
-)));
+    ),
+  )
+));
 // Home Gellary
 CSF::createSection($prefix, array(
   'parent'    => 'tranform-home',
   'title' => 'Home Page Gellary ',
-  'fields' => array(  
-   
+  'fields' => array(
+
     array(
       'id' => 'home-gellary-name',
       'title' => 'Gellary Name',
@@ -642,126 +650,155 @@ CSF::createSection($prefix, array(
       'id' => 'home-gellary-heading',
       'title' => 'Gellary Heading',
       'type'  => 'text',
-    ),    
+    ),
     array(
       'id' => 'home-gellary-button',
       'title' => 'GEllary Button NAme',
       'type'  => 'text',
-    ),    
+    ),
     array(
       'id' => 'home-gellary-button-link',
       'title' => 'Gellary Button Link',
       'type'  => 'text',
-    ), 
-   
-)));
+    ),
+
+  )
+));
 // Home Skill
 CSF::createSection($prefix, array(
   'parent'    => 'tranform-home',
   'title' => 'Home Page Skill ',
-  'fields' => array(  
-   
+  'fields' => array(
+
     array(
       'id'     => 'home-skill-repeater',
       'type'   => 'repeater',
       'title'  => 'Home About Skill',
       'button_title' => 'ADD ANOTHER Skill',
+      'limit' => 4,
       'fields' => array(
 
         array(
           'id'    => 'home-skill-plus',
           'type'  => 'text',
           'title' => 'Home Skill NUmber'
-        ),       
+        ),
         array(
           'id'    => 'home-skill-title',
           'type'  => 'text',
           'title' => 'Home Skill Title'
-        ),       
+        ),
       ),
     ),
-)));
-// Home Testimonial
+  )
+));
+//  Testimonial
 CSF::createSection($prefix, array(
   'parent'    => 'tranform-home',
-  'title' => 'Home Page Feedback ',
-  'fields' => array( 
+  'title' => 'Page Feedback ',
+  'fields' => array(
+    array(
+      'id'    => 'home-Feedback-name',
+      'type'  => 'text',
+      'title' => 'Testimonial Name'
+    ),
     array(
       'id'    => 'home-Feedback-title',
       'type'  => 'text',
-      'title' => 'Home Feedback Title'
-    ), 
+      'title' => ' Feedback Title'
+    ),
     array(
       'id'     => 'home-Feedback-repeater',
       'type'   => 'repeater',
-      'title'  => 'Home About Feedback',
+      'title'  => 'Client Feedback',
       'button_title' => 'ADD ANOTHER Feedback',
-      'fields' => array(        
+      'fields' => array(
         array(
-          'id'    => 'home-Feedback-Content',
-          'type'  => 'textarea',
-          'title' => 'Home Feedback Content'
-        ),       
+          'id'    => 'people-img',
+          'type'  => 'media',
+          'title' => 'People Image'
+        ),
+        array(
+          'id'    => 'people-name',
+          'type'  => 'text',
+          'title' => 'People Name'
+        ),
+        array(
+          'id'    => 'people-company',
+          'type'  => 'text',
+          'title' => 'Company Name'
+        ),
         array(
           'id'    => 'home-Feedback-img',
           'type'  => 'media',
           'title' => 'Home Feedback Image'
-        ),       
+        ),
         array(
-          'id'    => 'home-Feedback-name',
-          'type'  => 'text',
-          'title' => 'Home Feedback name'
-        ),       
+          'id'    => 'home-Feedback-Content',
+          'type'  => 'textarea',
+          'title' => 'Home Feedback Content'
+        ),        
         array(
-          'id'    => 'home-Feedback-pro',
-          'type'  => 'text',
-          'title' => 'Home Feedback Profession'
-        ),       
+          'id'     => 'feedback-start-repeater',
+          'type'   => 'repeater',
+          'title'  => 'Feedback Start',
+          'button_title' => 'Add Start',
+          'fields' => array(
+            array(
+              'id'    => 'feedback-start',
+              'type'  => 'icon',
+              'title' => 'Start Add'
+            ),
+          )
+        ),
+
       ),
     ),
-)));
+  )
+));
 // Home Book Now
 CSF::createSection($prefix, array(
   'parent'    => 'tranform-home',
   'title' => 'Home Page Book Now ',
-  'fields' => array(     
-   
+  'fields' => array(
+
     array(
       'id'    => 'home-book-name',
       'type'  => 'text',
       'title' => 'Book Now Name'
-    ), 
-   
+    ),
+
     array(
       'id'    => 'home-book-title',
       'type'  => 'text',
       'title' => 'Book Now Title'
-    ), 
-   
+    ),
+
     array(
       'id'    => 'home-book-content',
       'type'  => 'textarea',
       'title' => 'Book Now Content'
-    ),   
-    
+    ),
+
     array(
       'id'    => 'home-book-num',
       'type'  => 'text',
       'title' => 'Book Now Number'
-    ), 
+    ),
     array(
       'id'    => 'home-book-img-1',
       'type'  => 'media',
       'title' => 'Book Now First Image'
-    ), 
+    ),
 
     array(
       'id'    => 'home-book-img-2',
       'type'  => 'media',
       'title' => 'Book Now Seconed Image'
-    ),   
-   
-)));
+    ),
+
+  )
+));
 
 // ready to talk area area
 CSF::createSection($prefix, array(
@@ -815,8 +852,6 @@ CSF::createSection($prefix, array(
 
   )
 ));
-
-
 // Contuct us Left area area
 CSF::createSection($prefix, array(
   'id'    => 'tranform-section-contact',
@@ -872,53 +907,49 @@ CSF::createSection($prefix, array(
   'title' => 'Services  Section',
 ));
 
-// Single Sevice Testi
+// service Goodness Area
 CSF::createSection($prefix, array(
   'parent'    => 'tranform-section-srvice',
-  'title' => 'SerVice Consult Section',
+  'title' => 'Service Goodness Area',
   'fields' => array(
+    array(
+      'id' => 'our-goodness-name',
+      'title' => 'Our Goodness name',
+      'type'  => 'text',
+    ),
+    array(
+      'id' => 'our-goodness-title',
+      'title' => 'Our Goodness Title',
+      'type'  => 'text',
+    ),
 
     array(
-      'id' => 'conult-services-bg',
-      'title' => 'Consult Bg',
+      'id' => 'our-goodness-thumb',
+      'title' => 'Our Goodness Thumb',
       'type'  => 'media',
     ),
+
     array(
-      'id' => 'conult-services-thumb',
-      'title' => 'Consult Thumb',
-      'type'  => 'media',
-    ),
-    array(
-      'id' => 'conult-services-name',
-      'title' => 'Consult name',
-      'type'  => 'text',
-    ),
-    array(
-      'id' => 'conult-services-title',
-      'title' => 'Consult Title',
-      'type'  => 'text',
-    ),
-    array(
-      'id'     => 'conslut-repeater',
+      'id'     => 'goodness-repeater',
       'type'   => 'repeater',
-      'title'  => 'Consult Content Area',
-      'button_title' => 'Add Consult List',
+      'title'  => 'Our Goodnes Content Area',
+      'button_title' => 'Add Our Goodnes List',
       'fields' => array(
 
         array(
-          'id'    => 'conult-services-icon',
-          'type'  => 'icon',
-          'title' => 'Consult Icon'
+          'id'    => 'our-goodness-img',
+          'type'  => 'media',
+          'title' => 'Our Goodness Image'
         ),
         array(
-          'id'    => 'conult-services-heading',
+          'id'    => 'our-goodness-heading',
           'type'  => 'text',
-          'title' => 'Consult Heading Tag'
+          'title' => 'Our Goodness Heading Tag'
         ),
         array(
-          'id'    => 'conult-services-content',
+          'id'    => 'our-goodness-content',
           'type'  => 'textarea',
-          'title' => 'Contsult Content'
+          'title' => 'Our Goodness Content'
 
         )
       )
@@ -1160,7 +1191,7 @@ CSF::createSection($prefix, array(
           'id'    => 'expect-services-icon',
           'type'  => 'icon',
           'title' => 'What Expect Icon'
-        ),       
+        ),
         array(
           'id'    => 'expect-services-content',
           'type'  => 'textarea',
@@ -1181,8 +1212,8 @@ CSF::createSection($prefix, array(
       'id' => 'error-thumb',
       'title' => 'What Expect Bg',
       'type'  => 'media',
-    ),    
-    
+    ),
+
     array(
       'id' => 'error-title',
       'title' => 'What Expect Title',
@@ -1203,6 +1234,7 @@ CSF::createSection($prefix, array(
       'title' => 'Error Page Button Link',
       'type'  => 'text',
     ),
-   
 
-)));
+
+  )
+));
