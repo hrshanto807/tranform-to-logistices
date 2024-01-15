@@ -6,6 +6,7 @@ function all_tranform_theme_genarel(){
     add_theme_support('post-thumbnails');
     add_image_size('tal-blog-thumb', 453, 308,true);
     add_image_size('tal-service-thumb', 50, 56,false);
+    add_image_size('tal-project-thumb', 379, 346,false);
 
 };
 add_action('after_setup_theme','all_tranform_theme_genarel');
