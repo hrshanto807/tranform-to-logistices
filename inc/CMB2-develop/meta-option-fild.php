@@ -1,39 +1,13 @@
 <?php
 // blog page Meta List
 
-function aepexpart_blog_post_fileds()
+function transform_blog_post_fileds()
 {
     $blog_post = new_cmb2_box(array(
         'id' => 'meta-blog-list',
         'title' => esc_html(__('Meta List', 'tranform')),
         'object_types'  => array('post'),
-
-
-    ));
-    $blog_post->add_field(array(
-        'name' => esc_html__('Profile Image', 'tranform'),
-        'desc' => esc_html__('Upload an image or enter a URL.', 'tranform'),
-        'id'   => 'image-profile',
-        'type' => 'file',
-    ));
-    $blog_post->add_field(array(
-        'name' => esc_html__('Name Author', 'tranform'),
-        'desc' => esc_html__('name your author', 'tranform'),
-        'id'   => 'name-author',
-        'type' => 'text',
-    ));
-    $blog_post->add_field(array(
-        'name' => esc_html__('Position Author', 'tranform'),
-        'desc' => esc_html__('Position your author', 'tranform'),
-        'id'   => 'position-author',
-        'type' => 'text',
-    ));
-    $blog_post->add_field(array(
-        'name' => esc_html__('Some Text About Your Author', 'tranform'),
-        'desc' => esc_html__('Write Your about Author', 'tranform'),
-        'id'   => 'content-author',
-        'type' => 'textarea',
-    ));
+    ));    
     // Autor Social Link
     $blog_post->add_field(array(
         'id'          => 'social_repeat_group',
@@ -69,28 +43,8 @@ function aepexpart_blog_post_fileds()
         'sortable' => true,
         'limit'         => 4
     ));
-    $blog_post->add_field(array(
-        'name' => esc_html__('Date', 'tranform'),
-        'desc' => esc_html__('Date Input Here', 'tranform'),
-        'id'   => 'date-create-post',
-        'type' => 'text_date',
-    ));
-    $blog_post->add_field(array(
-        'name' => esc_html__('Button Link', 'tranform'),
-        'desc' => esc_html__('field description', 'tranform'),
-        'id'   => 'button-link',
-        'type' => 'text_url',
-
-    ));
-
-    $blog_post->add_field(array(
-        'name' => esc_html__('Write Button Name', 'tranform'),
-        'desc' => esc_html__('Write Button Name', 'tranform'),
-        'id'   => 'button-name',
-        'type' => 'text',
-    ));
 }
-add_action('cmb2_admin_init', 'aepexpart_blog_post_fileds');
+add_action('cmb2_admin_init', 'transform_blog_post_fileds');
 
 
 // Team page Meta List

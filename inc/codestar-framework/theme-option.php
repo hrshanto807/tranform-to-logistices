@@ -423,17 +423,7 @@ CSF::createSection($prefix, array(
       'id' => 'blog-title',
       'title' => 'Blog Title',
       'type'  => 'text',
-    ),
-    array(
-      'id' => 'blog-button',
-      'title' => 'Blog Button Name',
-      'type'  => 'text',
-    ),
-    array(
-      'id' => 'blog-button-link',
-      'title' => 'Another Link Set',
-      'type'  => 'text',
-    ),
+    ),   
   )
 ));
 
@@ -772,24 +762,7 @@ CSF::createSection($prefix, array(
     ),   
    
 )));
-// Blog Top area
-CSF::createSection($prefix, array(
-  'id'    => 'tranform-section-blog',
-  'title' => 'blog Section',
-  'fields' => array(   
-    array(
-      'id' => 'blog-name',
-      'title' => 'blog Name',
-      'type'  => 'text',
-    ),
-    array(
-      'id' => 'blog-title',
-      'title' => 'blog Title',
-      'type'  => 'text',
-    ),
 
-  )
-));
 // ready to talk area area
 CSF::createSection($prefix, array(
   'id'    => 'tranform-section-ready-talk',

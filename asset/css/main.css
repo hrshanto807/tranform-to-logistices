@@ -1141,15 +1141,15 @@ li .dropdown-toggle::after {
     background: #F5F5F5;
 }
 
-.single-li-list ul {
+.sidebar-area-tal ul {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 19px;
 }
 
-.single-li-list ul li a {
-    color: #666C89;
+.sidebar-area-tal ul li a {
+    color: #666C89 !important;
     font-family: Rubik;
     font-size: 18px;
     font-style: normal;
@@ -1159,6 +1159,20 @@ li .dropdown-toggle::after {
     padding-bottom: 10px;
 }
 
+.blog-catagory a {
+    color: #666C89 !important;
+    text-align: right;
+    font-family: Krub;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 151.523%;
+    /* 24.244px */
+}
+.blog-catagory a:hover {
+    color: var(--tal-primary-color);
+    
+}
 
 /* ======================================================================================================== */
 /* for Tab screen */

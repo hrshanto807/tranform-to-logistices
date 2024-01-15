@@ -11,7 +11,7 @@ get_header();
     <div class="container">
         <div class="row">
             <div class="tal-hero-area col-xl-6 col-md-12 col-sm-12">
-                <h6><?php echo get_the_time(get_queried_object_id());?></h6>
+                <h6><?php echo get_the_title(get_queried_object_id());?></h6>
                 <h1><?php if (!empty(tranform_get_option('blog-hero-title'))) {
                     echo esc_html(tranform_get_option('blog-hero-title'));
                 }; ?></h1>
