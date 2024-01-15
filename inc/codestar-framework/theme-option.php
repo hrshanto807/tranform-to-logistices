@@ -306,7 +306,6 @@ CSF::createSection($prefix, array(
     ),   
   )
 ));
-
 // contact hero bg
 CSF::createSection($prefix, array(
   'parent'    => 'tranform-hero-bg',
@@ -1194,18 +1193,18 @@ CSF::createSection($prefix, array(
   'fields' => array(
     array(
       'id' => 'error-thumb',
-      'title' => 'What Expect Bg',
+      'title' => 'Error Page Bg',
       'type'  => 'media',
     ),
 
     array(
       'id' => 'error-title',
-      'title' => 'What Expect Title',
+      'title' => 'Error Page Title',
       'type'  => 'text',
     ),
     array(
       'id' => 'error-content',
-      'title' => 'What Expect Content',
+      'title' => 'Error Page Content',
       'type'  => 'textarea',
     ),
     array(
