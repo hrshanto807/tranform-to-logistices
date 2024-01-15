@@ -47,118 +47,48 @@ function transform_blog_post_fileds()
 add_action('cmb2_admin_init', 'transform_blog_post_fileds');
 
 
-// Team page Meta List
+// project page Meta List
 
-function aepexpart_team_post_fileds()
+function transform_project_post_fileds()
 {
-    $team_post = new_cmb2_box(array(
-        'id' => 'meta-team-social-list',
-        'title' => esc_html(__('Social List', 'tranform')),
-        'object_types'  => array('tranform-teams'),
-
-
+    $project = new_cmb2_box(array(
+        'id' => 'meta-project-list',
+        'title' => esc_html(__('Meta List', 'tranform')),
+        'object_types'  => array('tranform-projects'),
+    ));    
+    // projects meta
+    $project->add_field(array(
+        'id' => 'customar_name',
+        'name' => __('customar name', 'Transform'),
+        'desc' => __('customar name'),
+        'type' => 'text',
     ));
-    // single page meta
-    $team_post->add_field(array(
-        'name' => esc_html__('Thumbnail Uper BG', 'tranform'),
-        'desc' => esc_html__('Thumbnail Uper BG', 'tranform'),
-        'id'   => 'thumb-bg',
+    $project->add_field(array(
+        'id' => 'post_status',
+        'name' => __('Post Status', 'Transform'),
+        'desc' => __('Post Status'),
+        'type' => 'text',
+    ));
+    $project->add_field(array(
+        'id' => 'project_video_bg',
+        'name' => __('Project Video Bg', 'Transform'),
+        'desc' => __('Project Video Bg'),
         'type' => 'file',
     ));
-    $team_post->add_field(array(
-        'name' => esc_html__('Position Member', 'tranform'),
-        'desc' => esc_html__('Position your Member', 'tranform'),
-        'id'   => 'position-team',
-        'type' => 'text',
-    ));   
-    // team Social Link
-    $team_post->add_field(array(
-        'id'          => 'team-social_repeat_group',
-        'type'        => 'group',
-        'description' => __('You Can Only 4 Social link Add Here', 'tranform'),
-        'repeatable'  => true,
-        'options'     => array(
-            'group_title'       => __('Social {#}', 'tranform'),
-            'add_button'        => __('Add Another Social', 'tranform'),
-            'remove_button'     => __('Remove Social', 'tranform'),
-            'sortable'          => true,
-        ),
+    $project->add_field(array(
+        'id' => 'project_video_img',
+        'name' => __('Project Video img', 'Transform'),
+        'desc' => __('Project Video img'),
+        'type' => 'file',
     ));
-    $team_post->add_group_field(
-        'team-social_repeat_group',
-        array(
-            'name' => 'Social Icon',
-            'id'   => 'team-social_icon',
-            'type' => 'faiconselect',
-            'options_cb' => 'returnRayFapsa',
-            'attributes' => array(
-                'faver' => 5
-            ),
-            'sortable' => true,
-            'limit'         => 4,
-
-        )
-    );
-    $team_post->add_group_field('team-social_repeat_group', array(
-        'name' => 'Social Link',
-        'id'   => 'team-social_link',
-        'type' => 'text',
-        'sortable' => true,
-        'limit'         => 4
-    ));
-   
-}
-add_action('cmb2_admin_init', 'aepexpart_team_post_fileds');
-
-// Team page Meta List
-
-function aepexpart_portfollio_fileds()
-{
-    $team_post = new_cmb2_box(array(
-        'id' => 'meta-button',
-        'title' => esc_html(__('Button Name Link', 'tranform')),
-        'object_types'  => array('aep-portfolio'),
-
-
-    ));
-    // single page meta
-    $team_post->add_field(array(
-        'name' => esc_html__('Button NAme', 'tranform'),
-        'desc' => esc_html__('Write Name Your Button', 'tranform'),
-        'id'   => 'port-btn',
-        'type' => 'text',
-    ));
-    $team_post->add_field(array(
-        'name' => esc_html__('Button Link', 'tranform'),
-        'desc' => esc_html__('Set Button Link', 'tranform'),
-        'id'   => 'port-btn-link',
-        'type' => 'text',
-    ));   
-   
-}
-add_action('cmb2_admin_init', 'aepexpart_portfollio_fileds');
-// Testi icon
-
-function aepexpart_testimonial_fileds()
-{
-    $team_post = new_cmb2_box(array(
-        'id' => 'testi-icon',
-        'title' => esc_html(__('TestiMonial Icon', 'tranform')),
-        'object_types'  => array('tranform-testimonial'),
-
-
-    ));
-    // single page meta
-    $team_post->add_field(array(
-        'name' => esc_html__('Icon', 'tranform'),
-        'desc' => esc_html__('Slect Your Icon', 'tranform'),
-        'id'   => 'test-icon',
-        'type' => 'faiconselect',
-        'options_cb' => 'returnRayFapsa',
-        'attributes' => array(
-            'faver' => 5
-        ),
+    $project->add_field(array(
+        'id' => 'project-video',
+        'name' => __('Project Video', 'transform'),
+        'desc' => __('Input Your Project Video'),
+        'type' => 'oembed',
     ));
 
 }
-add_action('cmb2_admin_init', 'aepexpart_testimonial_fileds');
+add_action('cmb2_admin_init', 'transform_project_post_fileds');
+
+

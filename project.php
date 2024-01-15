@@ -5,7 +5,11 @@
 get_header();
 ?>
         <!-- tal hero section area start -->
-        <section class="tal-all-hero-area" style="background-image: url(<?php echo get_template_directory_uri();?>/asset/img/about-hero-bg.png);">
+        <section class="tal-all-hero-area" style="background-image: url(<?php $project_hero_bg = tranform_get_option('project-hero-bg');
+                                                                if (!empty($project_hero_bg)) {
+                                                                    echo esc_url($project_hero_bg['url']);
+                                                                };
+                                                                ?>);">
             <div class="container">
                 <div class="row">
                     <div class="tal-hero-area col-xl-6 col-md-12 col-sm-12">
@@ -22,7 +26,8 @@ get_header();
                     <div class="row">                    
                     <?php $transform_project = new WP_Query(array(
                                 'post_type' => 'tranform-projects',
-                                'posts_per_page' => 6,                                
+                                'posts_per_page' => 6,
+                                'order' => 'asc'
                             ));
                             if ($transform_project->have_posts()) : while ($transform_project->have_posts()) : $transform_project->the_post();
                             ?>

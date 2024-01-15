@@ -53,6 +53,31 @@ function transform_custom_posts()
         'supports'     =>  array('title', 'editor', 'comments', 'revisions', 'trackbacks', 'author', 'excerpt', 'page-attributes', 'thumbnail', 'custom-fields', 'post-formats'),
 
     ));
+    register_taxonomy(
+        'project-cat',   // register name
+        'tranform-projects', // Post Type
+        array(
+            'hierarchical'   => true,
+            'label'          => 'Categories', // Display Name
+            'query_var'      => true,
+            'show_admin_column' =>true,
+            'rewrite'       => array( 
+                'slug'     =>  'project-catagory',// ths controls the base slug that will display before each term
+                'with_front'=> true // Don't display the catagory base before
+            )
+        ),
+    );
+     // resister tag
+     register_taxonomy(
+        'tal_portofollio_tags',  // Change this to your desired taxonomy name
+        'tranform-projects',  // Change this to your custom post type name
+        array(
+            'label' => 'Custom Post Tags',
+            'hierarchical' => false,
+            'public' => true,
+            'rewrite' => array('slug' => 'project_tags'),
+        )
+    );
 
 };
 

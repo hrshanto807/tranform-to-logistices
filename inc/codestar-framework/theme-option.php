@@ -277,44 +277,33 @@ CSF::createSection($prefix, array(
 ));
 
 
-// Case hero bg
+// Project hero bg
 CSF::createSection($prefix, array(
   'parent'    => 'tranform-hero-bg',
-  'title' => 'Case Studies Page Hero BG',
+  'title' => 'Project Page Hero BG',
   'fields' => array(
     array(
-      'id' => 'case-hero-bg',
-      'title' => 'Case Studies Hero Bg',
+      'id' => 'project-hero-bg',
+      'title' => 'Project Hero Bg',
       'type'  => 'media',
     ),
   )
 ));
-// Case single hero 
+// Projects single hero 
 CSF::createSection($prefix, array(
   'parent'    => 'tranform-hero-bg',
-  'title' => 'Single Case Studies Page Hero BG',
+  'title' => 'Single project single Page Hero BG',
   'fields' => array(
     array(
-      'id' => 'case-single-hero-bg',
-      'title' => ' Single Case Studies Hero Bg',
+      'id' => 'project-single-hero-bg',
+      'title' => ' Single project single Hero Bg',
       'type'  => 'media',
     ),
     array(
-      'id' => 'case-single-hero-name',
-      'title' => ' Single Case Studies Name',
+      'id' => 'project-single-hero-name',
+      'title' => ' Single project single Name',
       'type'  => 'text',
-    ),
-    array(
-      'id' => 'case-single-bottom-button-src',
-      'title' => ' Single Case Studies Bottom Button link For More Browse All Case',
-      'type'  => 'text',
-    ),
-    array(
-      'id' => 'case-single-bottom-button-name',
-      'title' => ' Single Case Studies Bottom Button name For More Browse All Case',
-      'type'  => 'text',
-    ),
-
+    ),   
   )
 ));
 
