@@ -7,75 +7,59 @@
                     <div class="col-xl-3">
                         <div class="footer-contact-area-logo">
                             <div class="footer-logo">
-                            <img src="<?php $log_footerr = tranform_get_option('logo-footer');
-                                                                if (!empty($log_footer)) {
-                                                                    echo esc_url($log_footer['url']);
-                                                                };
-                                                                ?>" alt="">
+                                <img src="<?php $log_footer = tranform_get_option('logo-footer');
+                                            if (!empty($log_footer)) {
+                                                echo esc_url($log_footer['url']);
+                                            };
+                                            ?>" alt="">
                             </div>
                             <p class="text-white">Leverage agile frameworks to provide a robust synopsis for
                                 strategy collaborative thinking to further the overall value proposition.</p>
                             <div class="contact-footer-src">
                                 <!-- single contact area start -->
-                                <div class="single-tal-contact-area">
-                                    <i class="fa-regular fa-envelope"></i>
-                                    <a href="mailto:">Email<br>
-                                        <span>contact@logistics.com</span></a>
-                                </div>
+                                <?php $contact_reapeater = tranform_get_option('contact-repeater');
+                                if (!empty($contact_reapeater)) : foreach ($contact_reapeater as $contact) :;
+                                ?>
+                                        <div class="single-tal-contact-area d-flex">
+                                            <i class="<?php if (!empty($contact)) {
+                                                            echo esc_attr($contact['contact-icon']);
+                                                        }; ?>"></i>
+                                            <a href="<?php if (!empty($contact)) {
+                                                            echo esc_url($contact['contact-link']);
+                                                        }; ?>"><?php if (!empty($contact)) {
+                                                                    echo esc_html($contact['contact-title']);
+                                                                }; ?><br>
+                                                <span><?php if (!empty($contact)) {
+                                                            echo esc_html($contact['contact-content']);
+                                                        }; ?></span></a>
+                                        </div>
+                                        <!-- single contact area end -->
+                                <?php endforeach;
+                                endif; ?>
                                 <!-- single contact area end -->
-                                <!-- single contact area start -->
-                                <div class="single-tal-contact-area">
-                                    <i class="fa-solid fa-phone"></i>
-                                    <a href="tel:">Call Us <br>
-                                        <span>(00) 112 365 489</span></a>
-                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-8">
                         <div class="single-footer-menu-area-mail row">
-                            <!-- single footer content area start -->
-                            <div class="single-footer-content col-xl-4 col-md-6">
-                                <h3>Pages</h3>
-                                <ul>
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Our Team</a></li>
-                                    <li><a href="#">Our Project</a></li>
-                                    <li><a href="#">Pricing</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                </ul>
-                            </div>
-                            <!-- single footer content area end -->
-                            <!-- single footer content area start -->
-                            <div class="single-footer-content col-xl-4 col-md-6">
-                                <h3>Utility</h3>
-                                <ul>
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Our Team</a></li>
-                                    <li><a href="#">Our Project</a></li>
-                                    <li><a href="#">Pricing</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                </ul>
-                            </div>
-                            <!-- single footer content area end -->
-                            <!-- single footer content area start -->
-                            <div class="single-footer-content col-xl-4 col-md-6">
-                                <h3>Subscribe</h3>
-                                <div class="subscribes-footer-form ">
-                                    <div class="subscribe-form d-flex gap-5 flex-column">
-                                        <input type="email" placeholder="Email here*">
-                                        <input type="submit" value="Send Now">
-                                    </div>
-                                    <div class="footer-icon d-flex gap-3 text-white mt-5">
-                                        <i class="fa-brands fa-linkedin"></i>
-                                        <i class="fa-brands fa-twitter"></i>
-                                        <i class="fa-brands fa-facebook"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- single footer content area end -->
-
-
+                            <!-- single footer content area start -->                            
+                                <?php
+                                if (is_active_sidebar('sidebar-footer')) {
+                                    dynamic_sidebar('sidebar-footer');
+                                };
+                                ?>                            
+                            <!-- single footer content area end -->                            
+                        </div>
+                        <div class="footer-icon d-flex gap-3 text-white mt-5">
+                            <?php $HEADER_SOCIAL = tranform_get_option('header-social-repeater');
+                            if (!empty($HEADER_SOCIAL)) : foreach ($HEADER_SOCIAL as $heaser_social) :; ?>
+                                    <a class="text-white" href="<?php if (!empty($header_left)) {
+                                                                    echo esc_url($heaser_social['header_social-link']);
+                                                                } ?>"><i class="<?php if (!empty($heaser_social)) {
+                                                                                        echo esc_attr($heaser_social['header_social-icon']);
+                                                                                    } ?>"></i></a>
+                            <?php endforeach;
+                            endif; ?>
                         </div>
                     </div>
                 </div>
