@@ -59,3 +59,4 @@ require_once TRANSFORM_THEME_INC . '/inc/CMB2-develop/meta-option-fild.php';
 require_once TRANSFORM_THEME_INC . '/inc/cmb2-aiconselect/iconselect.php';
 require_once TRANSFORM_THEME_INC . '/inc/widget.php';
 require_once TRANSFORM_THEME_INC . '/inc/custom.php';
+require_once TRANSFORM_THEME_INC . '/inc/shortcode.php';

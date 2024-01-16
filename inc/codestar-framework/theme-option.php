@@ -368,87 +368,12 @@ CSF::createSection($prefix, array(
     ),
   )
 ));
-
-
 // all home here themeoption
 CSF::createSection($prefix, array(
   'id'    => 'tranform-home',
   'title' => 'Home Page Theme Option ',
 ));
-// Home About
-CSF::createSection($prefix, array(
-  'parent'    => 'tranform-home',
-  'title' => 'Home Page About ',
-  'fields' => array(
-    array(
-      'id' => 'home-about-bg',
-      'title' => 'Home About Bg',
-      'type'  => 'media',
-    ),
-    array(
-      'id' => 'home-about-thumb',
-      'title' => 'Home About Thumb',
-      'type'  => 'media',
-    ),
-    array(
-      'id' => 'home-about-name',
-      'title' => 'Home About Name',
-      'type'  => 'text',
-    ),
-    array(
-      'id' => 'home-about-heading',
-      'title' => 'Home About Heading',
-      'type'  => 'text',
-    ),
-    array(
-      'id' => 'home-about-title',
-      'title' => 'Home About Title',
-      'type'  => 'text',
-    ),
-    array(
-      'id' => 'home-about-content',
-      'title' => 'Home ABout Content',
-      'type'  => 'textarea',
-    ),
-    array(
-      'id'     => 'home-about-repeater',
-      'type'   => 'repeater',
-      'title'  => 'Home About Repeater',
-      'button_title' => 'ADD ANOTHER Service',
-      'fields' => array(
 
-        array(
-          'id'    => 'about-icon',
-          'type'  => 'icon',
-          'title' => 'About Bottom icon'
-        ),
-        array(
-          'id'    => 'about-plus',
-          'type'  => 'text',
-          'title' => 'Plus Number'
-        ),
-        array(
-          'id'    => 'plus-title',
-          'type'  => 'text',
-          'title' => 'Plus COntent'
-        ),
-
-      ),
-    ),
-    array(
-      'id' => 'home-about-market-ex',
-      'title' => 'Home About Market Expricens PLus',
-      'type'  => 'text',
-    ),
-    array(
-      'id' => 'home-about-market-ex-title',
-      'title' => 'Home About Market Expricens Title',
-      'type'  => 'text',
-    ),
-
-
-  )
-));
 // Home Process
 CSF::createSection($prefix, array(
   'parent'    => 'tranform-home',
@@ -574,6 +499,32 @@ CSF::createSection($prefix, array(
 
   )
 ));
+//  About section
+CSF::createSection($prefix, array(
+  'id'    => 'tranform-about',
+  'title' => 'About page About Section',
+  'fields' => array(   
+    array(
+      'id' => 'about-thumb',
+      'title' => 'Home About Thumb',
+      'type'  => 'media',
+    ),
+    array(
+      'id' => 'about-name',
+      'title' => ' About Name',
+      'type'  => 'text',
+    ),   
+    array(
+      'id' => 'about-title',
+      'title' => ' About Title',
+      'type'  => 'text',
+    ),   
+    array(
+      'id' => 'about-content',
+      'title' => ' About Content',
+      'type'  => 'textarea',
+    ),   
+)));
 // satisfiyed Skill
 CSF::createSection($prefix, array(
   'parent'    => 'tranform-home',
