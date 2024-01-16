@@ -238,12 +238,7 @@ CSF::createSection($prefix, array(
       'id' => 'team-hero-bg',
       'title' => 'Team Hero Bg',
       'type'  => 'media',
-    ),
-    array(
-      'id' => 'team-hero-title',
-      'title' => 'Team Hero Title',
-      'type'  => 'text',
-    )
+    ),   
   )
 ));
 // sevices hero
@@ -275,8 +270,6 @@ CSF::createSection($prefix, array(
     ),    
   )
 ));
-
-
 // Project hero bg
 CSF::createSection($prefix, array(
   'parent'    => 'tranform-hero-bg',
@@ -335,38 +328,6 @@ CSF::createSection($prefix, array(
     )
   )
 ));
-// change log hero bg
-CSF::createSection($prefix, array(
-  'parent'    => 'tranform-hero-bg',
-  'title' => 'Change Log Page Hero BG',
-  'fields' => array(
-    array(
-      'id' => 'change-hero-bg',
-      'title' => 'Change Log Hero Bg',
-      'type'  => 'media',
-    ),
-    array(
-      'id' => 'change-hero-title',
-      'title' => 'Change Log Hero Title',
-      'type'  => 'text',
-    ),
-    array(
-      'id' => 'change-title',
-      'title' => 'Change Log Title',
-      'type'  => 'text',
-    ),
-    array(
-      'id' => 'change-btn',
-      'title' => 'Change Log Button',
-      'type'  => 'text',
-    ),
-    array(
-      'id' => 'change-btn-link',
-      'title' => 'Change Log Button Link',
-      'type'  => 'text',
-    )
-  )
-));
 // all section heading Content Area 
 CSF::createSection($prefix, array(
   'id'    => 'tranform-section-content',
@@ -408,33 +369,6 @@ CSF::createSection($prefix, array(
   )
 ));
 
-// team heading area
-CSF::createSection($prefix, array(
-  'parent'    => 'tranform-section-content',
-  'title' => 'Team Content',
-  'fields' => array(
-    array(
-      'id' => 'team-title',
-      'title' => 'Team Title',
-      'type'  => 'text',
-    ),
-    array(
-      'id' => 'team-content',
-      'title' => 'Team content',
-      'type'  => 'textarea',
-    ),
-    array(
-      'id' => 'team-button',
-      'title' => 'Team Button Name',
-      'type'  => 'text',
-    ),
-    array(
-      'id' => 'team-button-link',
-      'title' => 'Another Link Set',
-      'type'  => 'text',
-    ),
-  )
-));
 
 // all home here themeoption
 CSF::createSection($prefix, array(
@@ -732,102 +666,6 @@ CSF::createSection($prefix, array(
     ),
   )
 ));
-// Home Book Now
-CSF::createSection($prefix, array(
-  'parent'    => 'tranform-home',
-  'title' => 'Home Page Book Now ',
-  'fields' => array(
-
-    array(
-      'id'    => 'home-book-name',
-      'type'  => 'text',
-      'title' => 'Book Now Name'
-    ),
-
-    array(
-      'id'    => 'home-book-title',
-      'type'  => 'text',
-      'title' => 'Book Now Title'
-    ),
-
-    array(
-      'id'    => 'home-book-content',
-      'type'  => 'textarea',
-      'title' => 'Book Now Content'
-    ),
-
-    array(
-      'id'    => 'home-book-num',
-      'type'  => 'text',
-      'title' => 'Book Now Number'
-    ),
-    array(
-      'id'    => 'home-book-img-1',
-      'type'  => 'media',
-      'title' => 'Book Now First Image'
-    ),
-
-    array(
-      'id'    => 'home-book-img-2',
-      'type'  => 'media',
-      'title' => 'Book Now Seconed Image'
-    ),
-
-  )
-));
-
-// ready to talk area area
-CSF::createSection($prefix, array(
-  'id'    => 'tranform-section-ready-talk',
-  'title' => 'Ready To talk Section',
-  'fields' => array(
-    array(
-      'id' => 'ready-talk-img',
-      'title' => 'Ready To Talk Image',
-      'type'  => 'media',
-    ),
-    array(
-      'id' => 'ready-talk-name',
-      'title' => 'Ready To Talk Name',
-      'type'  => 'text',
-    ),
-    array(
-      'id' => 'ready-talk-title',
-      'title' => 'Ready To Talk Title',
-      'type'  => 'text',
-    ),
-    array(
-      'id' => 'ready-talk-content',
-      'title' => 'Ready To Talk content',
-      'type'  => 'textarea',
-    ),
-
-  )
-));
-
-// newsletter area
-CSF::createSection($prefix, array(
-  'id'    => 'tranform-section-newsletter',
-  'title' => 'Newsletter Section',
-  'fields' => array(
-    array(
-      'id' => 'newsletter-img',
-      'title' => 'Newsletter Image',
-      'type'  => 'media',
-    ),
-    array(
-      'id' => 'newsletter-name',
-      'title' => 'Newsletter Name',
-      'type'  => 'text',
-    ),
-    array(
-      'id' => 'newsletter-title',
-      'title' => 'Newsletter Title',
-      'type'  => 'text',
-    ),
-
-  )
-));
 // Contact us heading area
 CSF::createSection($prefix, array(
   'id'    => 'tranform-section-contact',
@@ -931,6 +769,114 @@ CSF::createSection($prefix, array(
 
 
 ));
+// team area
+CSF::createSection($prefix, array(
+  'id'    => 'tranform-section-team',
+  'title' => 'Team Content',
+  'fields' => array(
+    array(
+      'id' => 'team-name',
+      'title' => 'Team Name',
+      'type'  => 'text',
+    ),
+    array(
+      'id' => 'team-title',
+      'title' => 'Team Title',
+      'type'  => 'text',
+    ),
+    array(
+      'id'     => 'team-repeater',
+      'type'   => 'repeater',
+      'title'  => 'Team member',
+      'button_title' => 'Add Team Member',
+      'fields' => array(
+
+        array(
+          'id'    => 'team-member-img',
+          'type'  => 'media',
+          'title' => 'Team Member Image'
+        ),       
+        array(
+          'id'    => 'team-member-name',
+          'type'  => 'text',
+          'title' => 'Team Member Name'
+        ),
+        array(
+          'id'    => 'team-member-pro',
+          'type'  => 'text',
+          'title' => 'Team Member Profession'
+        ),
+        array(
+          'id'     => 'member-social-repeater',
+          'type'   => 'repeater',
+          'title'  => 'Team Social Link',
+          'button_title' => 'Add Social',
+          'fields' => array(
+            array(
+              'id'    => 'team-social-icon',
+              'type'  => 'icon',
+              'title' => 'Team Member Social Icon'
+            ),
+            array(
+              'id'    => 'team-social-link',
+              'type'  => 'text',
+              'title' => 'Team Member Social Link'
+            ),
+          )
+        ),  
+)))));
+// tal-why-choose
+CSF::createSection($prefix, array(
+  'id'    => 'tranform-section-tal-why-choose',
+  'title' => 'Why Choose Content',
+  'fields' => array(
+    array(
+      'id' => 'why-choose-thumb',
+      'title' => 'Why Choose Thumb Image',
+      'type'  => 'media',
+    ),
+    array(
+      'id' => 'why-choose-name',
+      'title' => 'Why Choose Name',
+      'type'  => 'text',
+    ),
+    array(
+      'id' => 'why-choose-title',
+      'title' => 'Why Choose Title',
+      'type'  => 'text',
+    ),
+    array(
+      'id' => 'why-choose-content',
+      'title' => 'Why Choose Content',
+      'type'  => 'textarea',
+    ),
+    array(
+      'id'     => 'why-choose-repeater',
+      'type'   => 'repeater',
+      'title'  => 'Vission $ Mission',
+      'button_title' => 'Add Vission',
+      'limit' => 2,
+      'fields' => array(
+
+        array(
+          'id'    => 'why-choose-vission-img',
+          'type'  => 'media',
+          'title' => 'Why Choose Image'
+        ),       
+        array(
+          'id'    => 'why-choose-vission-name',
+          'type'  => 'text',
+          'title' => 'Why Choose Name'
+        ),
+        array(
+          'id'    => 'why-choose-vission-content',
+          'type'  => 'textarea',
+          'title' => 'Why Choose Content Vision'
+        ),
+      
+         
+)))));
+
 // FAQS Area
 CSF::createSection($prefix, array(
   'id'    => 'tranform-section-faqs',

@@ -919,7 +919,9 @@ li .dropdown-toggle::after {
     font-weight: 400;
     line-height: normal;
     margin-bottom: 17px;
-    list-style: decimal;
+    list-style: decimal;   
+    border-bottom: 1px solid var(--tal-text-color);    
+    padding-bottom: 15px;
 
 }
 
