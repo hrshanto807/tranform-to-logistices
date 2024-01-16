@@ -7,7 +7,11 @@
                     <div class="col-xl-3">
                         <div class="footer-contact-area-logo">
                             <div class="footer-logo">
-                                <img src="<?php echo get_template_directory_uri();?>/asset/img/Logo.png" alt="">
+                            <img src="<?php $log_footerr = tranform_get_option('logo-footer');
+                                                                if (!empty($log_footer)) {
+                                                                    echo esc_url($log_footer['url']);
+                                                                };
+                                                                ?>" alt="">
                             </div>
                             <p class="text-white">Leverage agile frameworks to provide a robust synopsis for
                                 strategy collaborative thinking to further the overall value proposition.</p>

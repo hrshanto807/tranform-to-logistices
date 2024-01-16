@@ -8,6 +8,8 @@ function all_tranform_theme_genarel(){
     add_image_size('tal-service-thumb', 50, 56,false);
     add_image_size('tal-project-thumb', 379, 346,false);
 
+    register_nav_menu('tal-main-menu', esc_html(__('Header Menu', 'tranform')));
+
 };
 add_action('after_setup_theme','all_tranform_theme_genarel');
 // functions all scripts here
@@ -68,3 +70,4 @@ require_once TRANSFORM_THEME_INC . '/inc/cmb2-aiconselect/iconselect.php';
 require_once TRANSFORM_THEME_INC . '/inc/widget.php';
 require_once TRANSFORM_THEME_INC . '/inc/custom.php';
 require_once TRANSFORM_THEME_INC . '/inc/shortcode.php';
+require_once TRANSFORM_THEME_INC . '/inc/class-wp-bootstrap-navwalker.php';

@@ -60,7 +60,7 @@ CSF::createSection($prefix, array(
         array(
           'id'    => 'header-left-content',
           'type'  => 'text',
-          'title' => 'Write Time And Location'
+          'title' => 'Write Time, Emails , Phone'
         ),
 
       ),
@@ -86,12 +86,12 @@ CSF::createSection($prefix, array(
       'fields' => array(
 
         array(
-          'id'    => 'social-icon',
+          'id'    => 'header_social-icon',
           'type'  => 'icon',
           'title' => 'Header Social icon'
         ),
         array(
-          'id'    => 'social-link',
+          'id'    => 'header_social-link',
           'type'  => 'text',
           'title' => 'Header Social Link'
         ),
