@@ -50,6 +50,14 @@ function aep_social_meta_icon() {
 
 add_filter( 'sa_cmb2_field_faiconselect_asset_path', 'aep_social_meta_icon' );
 
+//  allow html tag
+function transform_allow_tag()
+{
+    $allow_tags = array(
+        'br'  => array(),
+    );
+    return $allow_tags;
+};
 
 // file inclclude area here
 require_once TRANSFORM_THEME_INC . '/inc/codestar-framework/codestar-framework.php';

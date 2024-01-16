@@ -158,28 +158,18 @@ CSF::createSection($prefix, array(
     array(
       'id' => 'home-hero-content',
       'title' => 'Home Hero Content',
-      'type'  => 'text',
+      'type'  => 'textarea',
     ),
     array(
-      'id' => 'home-hero-btn-1',
+      'id' => 'home-hero-btn',
       'title' => 'Home Hero btn 1',
       'type'  => 'text',
     ),
     array(
-      'id' => 'home-hero-btn-1-link',
+      'id' => 'home-hero-btn-link',
       'title' => 'Home Hero btn 1 LInk',
       'type'  => 'text',
-    ),
-    array(
-      'id' => 'home-hero-btn-2',
-      'title' => 'Home Hero btn 2',
-      'type'  => 'text',
-    ),
-    array(
-      'id' => 'home-hero-btn-2-link',
-      'title' => 'Home Hero btn 2 link',
-      'type'  => 'text',
-    )
+    ),   
   )
 ));
 // blog hero
@@ -374,51 +364,61 @@ CSF::createSection($prefix, array(
   'title' => 'Home Page Theme Option ',
 ));
 
-// Home Process
+// Home Why us area
 CSF::createSection($prefix, array(
   'parent'    => 'tranform-home',
-  'title' => 'Home Page Proccess ',
-  'fields' => array(
-
+  'title' => 'Home Page Why Us ',
+  'fields' => array(   
     array(
-      'id' => 'home-Proccess-name',
-      'title' => 'Home Proccess Name',
+      'id' => 'home-why-us-section_bg',
+      'title' => 'Home why-us Section BG',
+      'type'  => 'media',
+    ),
+    array(
+      'id' => 'home-why-us-name',
+      'title' => 'Home why-us Name',
       'type'  => 'text',
     ),
     array(
-      'id' => 'home-Proccess-heading',
-      'title' => 'Home Proccess Heading',
+      'id' => 'home-why-us-heading',
+      'title' => 'Home why-us Heading',
       'type'  => 'text',
     ),
     array(
-      'id' => 'home-Proccess-content',
-      'title' => 'Home Proccess Content',
+      'id' => 'home-why-us-content',
+      'title' => 'Home why-us Content',
       'type'  => 'textarea',
     ),
     array(
-      'id'     => 'home-Proccess-repeater',
+      'id'     => 'home-why-us-repeater',
       'type'   => 'repeater',
-      'title'  => 'Home Proccess Repeater',
+      'title'  => 'Home why-us Repeater',
       'button_title' => 'ADD ANOTHER Service',
+      'limit' => 2,
       'fields' => array(
 
         array(
-          'id'    => 'Proccess-num',
-          'type'  => 'text',
-          'title' => 'Proccess Number'
+          'id'    => 'why-us-icon',
+          'type'  => 'icon',
+          'title' => 'why-us Icon'
         ),
         array(
-          'id'    => 'Proccess-title',
+          'id'    => 'why-us-title',
           'type'  => 'text',
-          'title' => 'Proccess Title'
-        ),
-        array(
-          'id'    => 'Proccess-content',
-          'type'  => 'text',
-          'title' => 'Proccess COntent'
-        ),
+          'title' => 'why-us Title'
+        ),      
 
       ),
+    ),
+    array(
+      'id' => 'home-why-us-bg',
+      'title' => 'Home why-us BG',
+      'type'  => 'media',
+    ),
+    array(
+      'id' => 'home-why-us-img',
+      'title' => 'Home why-us Image',
+      'type'  => 'media',
     ),
   )
 ));
@@ -527,8 +527,8 @@ CSF::createSection($prefix, array(
 )));
 // satisfiyed Skill
 CSF::createSection($prefix, array(
-  'parent'    => 'tranform-home',
-  'title' => 'Home Page Skill ',
+  'id'    => 'tranform-stisfiyed',
+  'title' => 'Page Skill ',
   'fields' => array(
 
     array(
@@ -555,7 +555,7 @@ CSF::createSection($prefix, array(
 ));
 //  Testimonial
 CSF::createSection($prefix, array(
-  'parent'    => 'tranform-home',
+  'id'    => 'tranform-testi',
   'title' => 'Page Feedback ',
   'fields' => array(
     array(
