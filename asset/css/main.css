@@ -911,15 +911,15 @@ li .dropdown-toggle::after {
 
 }
 
-.single-price-list-area li {
-    color: #1C1F35;
-    text-align: center;
+.single-price-list-area .price-list-support li {
+    color: #1C1F35;    
     font-family: Rubik;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     margin-bottom: 17px;
+    list-style: decimal;
 
 }
 

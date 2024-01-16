@@ -318,19 +318,19 @@ CSF::createSection($prefix, array(
     ),   
   )
 ));
-//licence hero bg
+//Price hero bg
 CSF::createSection($prefix, array(
   'parent'    => 'tranform-hero-bg',
-  'title' => 'License Page Hero BG',
+  'title' => 'Price Page Hero BG',
   'fields' => array(
     array(
-      'id' => 'license-hero-bg',
-      'title' => 'License Hero Bg',
+      'id' => 'price-hero-bg',
+      'title' => 'Price Hero Bg',
       'type'  => 'media',
     ),
     array(
-      'id' => 'license-hero-title',
-      'title' => 'License Hero Title',
+      'id' => 'price-hero-title',
+      'title' => 'Price Hero Title',
       'type'  => 'text',
     )
   )
@@ -367,8 +367,6 @@ CSF::createSection($prefix, array(
     )
   )
 ));
-
-
 // all section heading Content Area 
 CSF::createSection($prefix, array(
   'id'    => 'tranform-section-content',
@@ -642,7 +640,7 @@ CSF::createSection($prefix, array(
 
   )
 ));
-// Home Skill
+// satisfiyed Skill
 CSF::createSection($prefix, array(
   'parent'    => 'tranform-home',
   'title' => 'Home Page Skill ',
@@ -882,7 +880,6 @@ CSF::createSection($prefix, array(
   'id'    => 'tranform-section-srvice',
   'title' => 'Services  Section',
 ));
-
 // service Goodness Area
 CSF::createSection($prefix, array(
   'parent'    => 'tranform-section-srvice',
@@ -1004,12 +1001,7 @@ CSF::createSection($prefix, array(
           'id'    => 'price-plan',
           'type'  => 'text',
           'title' => 'Price Plan'
-        ),
-        array(
-          'id'    => 'price-content',
-          'type'  => 'text',
-          'title' => 'Price Content Short'
-        ),
+        ),       
         array(
           'id'    => 'price-doller',
           'type'  => 'text',
